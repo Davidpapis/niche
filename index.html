@@ -1,0 +1,2907 @@
+<!DOCTYPE html>
+<html lang="en" class="lang-en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niche Perfumes — SEO & E-Commerce Growth Proposal</title>
+    <!-- Premium Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --bg-color: #FAF9F6; /* Luxury Warm Cream */
+            --text-dark: #1C1C1C; /* Luxury Charcoal */
+            --gold: #C5A880; /* Luxury Matte Gold */
+            --gold-hover: #AF926B;
+            --white: #FFFFFF;
+            --gray-light: #F4F3EF;
+            --gray-border: rgba(197, 168, 128, 0.2);
+            --shadow-soft: 0 10px 40px rgba(0, 0, 0, 0.03);
+            --shadow-hover: 0 15px 50px rgba(197, 168, 128, 0.1);
+            --transition-smooth: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Bilingual Toggle Engine */
+        html.lang-en .es-text { display: none !important; }
+        html.lang-es .en-text { display: none !important; }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-dark);
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Luxury Header */
+        header {
+            background-color: var(--white);
+            border-bottom: 1px solid var(--gray-border);
+            padding: 1.2rem 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .brand-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            letter-spacing: 0.15em;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        .brand-subtitle {
+            font-size: 0.75rem;
+            letter-spacing: 0.2em;
+            color: var(--gold);
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-top: 2px;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        /* Bilingual Switcher */
+        .lang-switcher {
+            display: flex;
+            background-color: var(--gray-light);
+            border: 1px solid var(--gray-border);
+            padding: 2px;
+            border-radius: 20px;
+        }
+
+        .btn-lang {
+            border: none;
+            background: transparent;
+            padding: 0.4rem 1rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 15px;
+            transition: var(--transition-smooth);
+            color: #777;
+        }
+
+        .btn-lang.active {
+            background-color: var(--gold);
+            color: var(--white);
+            box-shadow: 0 4px 10px rgba(197, 168, 128, 0.3);
+        }
+
+        .btn-pdf {
+            background-color: transparent;
+            color: var(--text-dark);
+            border: 1px solid var(--text-dark);
+            padding: 0.5rem 1.2rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+        }
+
+        .btn-pdf:hover {
+            background-color: var(--text-dark);
+            color: var(--white);
+        }
+
+        .btn-start {
+            background-color: var(--gold);
+            color: var(--white);
+            border: 1px solid var(--gold);
+            padding: 0.5rem 1.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+        }
+
+        .btn-start:hover {
+            background-color: var(--text-dark);
+            border-color: var(--text-dark);
+        }
+
+        /* App Container */
+        .app-container {
+            display: flex;
+            flex: 1;
+            height: calc(100vh - 75px);
+            position: relative;
+        }
+
+        /* Elegant Sidebar Navigation */
+        .sidebar {
+            width: 290px;
+            background-color: var(--white);
+            border-right: 1px solid var(--gray-border);
+            display: flex;
+            flex-direction: column;
+            padding: 2rem 1.5rem;
+            justify-content: space-between;
+            z-index: 90;
+        }
+
+        .slide-menu-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+        }
+
+        .slide-menu-item {
+            padding: 0.8rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: #777;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            transition: var(--transition-smooth);
+            border-left: 2px solid transparent;
+        }
+
+        .slide-menu-item:hover {
+            background-color: var(--gray-light);
+            color: var(--text-dark);
+        }
+
+        .slide-menu-item.active {
+            background-color: var(--gray-light);
+            color: var(--text-dark);
+            font-weight: 500;
+            border-left-color: var(--gold);
+        }
+
+        .slide-menu-item i {
+            width: 18px;
+            font-size: 0.95rem;
+            text-align: center;
+            color: var(--gold);
+        }
+
+        .sidebar-footer {
+            border-top: 1px solid var(--gray-light);
+            padding-top: 1.5rem;
+            text-align: center;
+        }
+
+        .sidebar-footer p {
+            font-size: 0.75rem;
+            color: #999;
+            letter-spacing: 0.05em;
+        }
+
+        /* Presentation Workspace */
+        .workspace {
+            flex: 1;
+            padding: 3rem 4rem;
+            overflow-y: auto;
+            position: relative;
+            background: radial-gradient(circle at 10% 10%, #FFFFFF, var(--bg-color));
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* Slide Styles & Transitions */
+        .slide-container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            display: none;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s cubic-bezier(0.25, 1, 0.5, 1), transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+
+        .slide-container.active {
+            display: flex;
+            flex-direction: column;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Slide Content Components */
+        .slide-header {
+            margin-bottom: 2rem;
+        }
+
+        .slide-tag {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.25em;
+            color: var(--gold);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .slide-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 2.5rem;
+            font-weight: 500;
+            line-height: 1.2;
+            color: var(--text-dark);
+        }
+
+        .slide-title span {
+            font-style: italic;
+            color: var(--gold);
+        }
+
+        .slide-body {
+            font-size: 1.05rem;
+            line-height: 1.6;
+            color: #4A4A4A;
+        }
+
+        /* UI Cards Grid */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(197, 168, 128, 0.18);
+            border-radius: 4px;
+            padding: 1.8rem;
+            box-shadow: var(--shadow-soft);
+            transition: var(--transition-smooth);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+            border-color: rgba(197, 168, 128, 0.4);
+        }
+
+        .glass-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin-bottom: 0.8rem;
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .glass-card h3 i {
+            color: var(--gold);
+        }
+
+        .glass-card p {
+            font-size: 0.95rem;
+            color: #5A5A5A;
+            line-height: 1.5;
+        }
+
+        /* Cover Slide Layout */
+        .cover-layout {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            height: 100%;
+        }
+
+        .cover-text {
+            flex: 1.2;
+        }
+
+        .cover-text h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.2rem;
+            font-weight: 400;
+            line-height: 1.15;
+            margin-bottom: 1.5rem;
+        }
+
+        .cover-text h1 span {
+            font-style: italic;
+            color: var(--gold);
+        }
+
+        .cover-text p {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .cover-image-container {
+            flex: 1;
+            position: relative;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: var(--shadow-hover);
+            border: 1px solid var(--gray-border);
+            height: 400px;
+        }
+
+        .cover-image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 1.5s ease;
+        }
+
+        .cover-image-container:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Interactive Quiz Simulator */
+        .quiz-simulator {
+            background: var(--white);
+            border: 1px solid var(--gray-border);
+            border-radius: 4px;
+            padding: 2rem;
+            box-shadow: var(--shadow-soft);
+            margin-top: 1.5rem;
+            min-height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+        }
+
+        .simulator-step {
+            display: none;
+            animation: fadeIn 0.4s ease forwards;
+        }
+
+        .simulator-step.active {
+            display: block;
+        }
+
+        .simulator-question {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .simulator-options {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+
+        .simulator-btn {
+            background-color: var(--bg-color);
+            border: 1px solid var(--gray-border);
+            padding: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 500;
+            text-align: center;
+            transition: var(--transition-smooth);
+        }
+
+        .simulator-btn:hover {
+            border-color: var(--gold);
+            background-color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        .simulator-result-box {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .result-image {
+            width: 150px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 4px;
+            border: 1px solid var(--gray-border);
+        }
+
+        .result-info {
+            text-align: left;
+            flex: 1;
+        }
+
+        .result-tag {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--gold);
+            font-weight: 700;
+        }
+
+        .result-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 500;
+            margin: 0.3rem 0;
+        }
+
+        .result-desc {
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.5;
+            margin-bottom: 1.2rem;
+        }
+
+        .btn-redeem {
+            background-color: var(--text-dark);
+            color: var(--white);
+            border: none;
+            padding: 0.6rem 1.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+        }
+
+        .btn-redeem:hover {
+            background-color: var(--gold);
+        }
+
+        /* Timeline / Roadmap */
+        .roadmap-timeline {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            margin-top: 3rem;
+            padding-bottom: 1rem;
+        }
+
+        .roadmap-line {
+            position: absolute;
+            top: 25px;
+            left: 5%;
+            right: 5%;
+            height: 2px;
+            background-color: var(--gray-border);
+            z-index: 1;
+        }
+
+        .roadmap-node {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 22%;
+            z-index: 5;
+            cursor: pointer;
+        }
+
+        .roadmap-dot {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--white);
+            border: 2px solid var(--gray-border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: #777;
+            transition: var(--transition-smooth);
+            margin-bottom: 1rem;
+        }
+
+        .roadmap-node:hover .roadmap-dot,
+        .roadmap-node.active .roadmap-dot {
+            border-color: var(--gold);
+            color: var(--gold);
+            box-shadow: 0 0 15px rgba(197, 168, 128, 0.4);
+            transform: scale(1.1);
+        }
+
+        .roadmap-node.active .roadmap-dot {
+            background-color: var(--gold);
+            color: var(--white);
+        }
+
+        .roadmap-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-align: center;
+            color: var(--text-dark);
+        }
+
+        .roadmap-desc {
+            font-size: 0.8rem;
+            color: #777;
+            text-align: center;
+            margin-top: 0.3rem;
+            max-width: 150px;
+        }
+
+        .roadmap-detail-card {
+            background-color: var(--white);
+            border: 1px solid var(--gray-border);
+            padding: 1.5rem;
+            margin-top: 2rem;
+            border-radius: 4px;
+            box-shadow: var(--shadow-soft);
+        }
+
+        /* Interactive Pricing ROI Calculator */
+        .pricing-section {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .pricing-column {
+            flex: 1;
+            background-color: var(--white);
+            border: 1px solid var(--gray-border);
+            border-radius: 4px;
+            padding: 2rem 1.4rem;
+            box-shadow: var(--shadow-soft);
+            text-align: center;
+            position: relative;
+            transition: var(--transition-smooth);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .pricing-column.recommended {
+            border-color: var(--gold);
+            box-shadow: var(--shadow-hover);
+            transform: scale(1.03);
+            z-index: 10;
+        }
+
+        .recommended-badge {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--gold);
+            color: var(--white);
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            padding: 0.3rem 1.2rem;
+            border-radius: 20px;
+        }
+
+        .price-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin-bottom: 0.3rem;
+        }
+
+        .price-val {
+            font-size: 1.9rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin: 0.8rem 0;
+        }
+
+        .price-val span {
+            font-size: 0.85rem;
+            font-weight: 400;
+            color: #777;
+        }
+
+        .price-contract-total {
+            font-size: 0.8rem;
+            color: var(--gold);
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            margin-top: -0.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .price-features {
+            list-style: none;
+            text-align: left;
+            margin: 1.2rem 0;
+            font-size: 0.85rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+            color: #555;
+            flex: 1;
+        }
+
+        .price-features li {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .price-features li i {
+            color: var(--gold);
+            font-size: 0.8rem;
+        }
+
+        .btn-pricing {
+            width: 100%;
+            background-color: transparent;
+            color: var(--text-dark);
+            border: 1px solid var(--text-dark);
+            padding: 0.7rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            margin-top: auto;
+        }
+
+        .pricing-column.recommended .btn-pricing {
+            background-color: var(--gold);
+            border-color: var(--gold);
+            color: var(--white);
+        }
+
+        .pricing-column.recommended .btn-pricing:hover {
+            background-color: var(--text-dark);
+            border-color: var(--text-dark);
+        }
+
+        .btn-pricing:hover {
+            background-color: var(--text-dark);
+            color: var(--white);
+        }
+
+        /* ROI Calculator Card */
+        .calculator-card {
+            background-color: var(--text-dark);
+            color: var(--white);
+            padding: 1.8rem;
+            border-radius: 4px;
+            width: 310px;
+            box-shadow: var(--shadow-hover);
+        }
+
+        .calculator-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-weight: 400;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 0.8rem;
+            margin-bottom: 1.2rem;
+            color: var(--gold);
+        }
+
+        .calc-group {
+            margin-bottom: 1.2rem;
+        }
+
+        .calc-group label {
+            display: block;
+            font-size: 0.85rem;
+            color: #BBB;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .calc-input-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .calc-slider {
+            flex: 1;
+            margin-right: 1rem;
+            accent-color: var(--gold);
+        }
+
+        .calc-val {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--white);
+            width: 60px;
+            text-align: right;
+        }
+
+        .calc-results {
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 1rem;
+            border-radius: 4px;
+            margin-top: 1.5rem;
+        }
+
+        .calc-res-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            margin-bottom: 0.6rem;
+            color: #BBB;
+        }
+
+        .calc-res-row:last-child {
+            margin-bottom: 0;
+            font-weight: 600;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 0.6rem;
+            color: var(--gold);
+            font-size: 1.05rem;
+        }
+
+        /* Bottom Slides Navigation Control */
+        .controls-bar {
+            background-color: var(--white);
+            border-top: 1px solid var(--gray-border);
+            padding: 1rem 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .navigation-btns {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .btn-nav {
+            background-color: var(--bg-color);
+            border: 1px solid var(--gray-border);
+            color: var(--text-dark);
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            transition: var(--transition-smooth);
+        }
+
+        .btn-nav:hover {
+            background-color: var(--gold);
+            border-color: var(--gold);
+            color: var(--white);
+        }
+
+        .progress-indicator {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .progress-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: var(--gray-border);
+            transition: var(--transition-smooth);
+        }
+
+        .progress-dot.active {
+            background-color: var(--gold);
+            width: 25px;
+            border-radius: 10px;
+        }
+
+        .slide-counter-txt {
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: #888;
+        }
+
+        /* Split layout components */
+        .split-layout {
+            display: flex;
+            align-items: center;
+            gap: 2.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .split-left {
+            flex: 1.2;
+        }
+
+        .split-right {
+            flex: 1;
+        }
+
+        .split-right img {
+            width: 100%;
+            border-radius: 4px;
+            box-shadow: var(--shadow-soft);
+            border: 1px solid var(--gray-border);
+            object-fit: cover;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 1024px) {
+            .app-container {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+                height: auto;
+                border-right: none;
+                border-bottom: 1px solid var(--gray-border);
+                padding: 1rem;
+            }
+            .slide-menu-list {
+                flex-direction: row;
+                overflow-x: auto;
+                padding-bottom: 0.5rem;
+            }
+            .slide-menu-item {
+                white-space: nowrap;
+            }
+            .workspace {
+                padding: 2rem;
+            }
+        }
+
+        /* Premium Document Modal */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(28, 28, 28, 0.4);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .modal-overlay.active {
+            opacity: 1;
+        }
+
+        .modal-container {
+            background: var(--bg-color);
+            border: 1px solid var(--gold);
+            width: 90%;
+            max-width: 950px;
+            height: 85vh;
+            border-radius: 4px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            transform: translateY(20px);
+            transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+
+        .modal-overlay.active .modal-container {
+            transform: translateY(0);
+        }
+
+        .modal-header {
+            padding: 1.5rem 2.5rem;
+            background: var(--white);
+            border-bottom: 1px solid var(--gray-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-close {
+            background: transparent;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #777;
+            transition: var(--transition-smooth);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .modal-close:hover {
+            background-color: var(--gray-light);
+            color: var(--text-dark);
+        }
+
+        .modal-body {
+            flex: 1;
+            padding: 3rem 4rem;
+            overflow-y: auto;
+            background: radial-gradient(circle at 10% 10%, #FFFFFF, var(--bg-color));
+            font-family: 'Outfit', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.8;
+            text-align: left;
+        }
+
+        .modal-body h1, .modal-body h2, .modal-body h3, .modal-body h4 {
+            font-family: 'Playfair Display', serif;
+            color: var(--text-dark);
+            margin-top: 2rem;
+            margin-bottom: 1.2rem;
+            font-weight: 500;
+        }
+
+        .modal-body h1 {
+            font-size: 2.2rem;
+            border-bottom: 1px solid var(--gold);
+            padding-bottom: 0.8rem;
+            margin-top: 0;
+        }
+
+        .modal-body h2 {
+            font-size: 1.6rem;
+            border-bottom: 1px solid var(--gray-border);
+            padding-bottom: 0.4rem;
+            margin-top: 2.5rem;
+        }
+
+        .modal-body h3 {
+            font-size: 1.3rem;
+            margin-top: 1.8rem;
+        }
+
+        .modal-body h4 {
+            font-size: 1.15rem;
+            margin-top: 1.5rem;
+        }
+
+        .modal-body p {
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+            color: #4A4A4A;
+        }
+
+        .modal-body ul, .modal-body ol {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+            color: #4A4A4A;
+        }
+
+        .modal-body li {
+            margin-bottom: 0.6rem;
+        }
+
+        .modal-body table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            font-size: 0.95rem;
+            border: 1px solid var(--gray-border);
+            background: var(--white);
+        }
+
+        .modal-body th, .modal-body td {
+            padding: 1rem 1.2rem;
+            border: 1px solid var(--gray-border);
+            text-align: left;
+        }
+
+        .modal-body th {
+            background-color: var(--gray-light);
+            font-weight: 600;
+        }
+
+        .modal-body blockquote {
+            border-left: 3px solid var(--gold);
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            background-color: rgba(197, 168, 128, 0.05);
+            font-style: italic;
+            font-size: 1.05rem;
+        }
+
+        .modal-body pre {
+            background-color: var(--text-dark);
+            color: #8FCD78;
+            font-family: monospace;
+            padding: 1.5rem;
+            border-radius: 4px;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+            font-size: 0.9rem;
+        }
+
+        .modal-body code {
+            font-family: monospace;
+            background-color: var(--gray-light);
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            color: var(--gold-hover);
+            font-size: 0.9rem;
+        }
+
+        .modal-body pre code {
+            padding: 0;
+            background-color: transparent;
+            color: inherit;
+            font-size: inherit;
+        }
+        
+        .modal-body hr {
+            border: 0;
+            border-top: 1px solid var(--gray-border);
+            margin: 2.5rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .modal-container {
+                width: 95%;
+                height: 90vh;
+            }
+            .modal-body {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Luxury Header -->
+    <header>
+        <div class="logo-area">
+            <div>
+                <h1 class="brand-title">Niche Perfumes</h1>
+                <div class="brand-subtitle">
+                    <span class="en-text">Growth & SEO Strategy</span>
+                    <span class="es-text">Estrategia SEO & Crecimiento</span>
+                </div>
+            </div>
+        </div>
+        <div class="header-actions">
+            <!-- Bilingual Toggle Switcher -->
+            <div class="lang-switcher">
+                <button class="btn-lang active" id="lang-btn-en" onclick="setLanguage('en')">EN</button>
+                <button class="btn-lang" id="lang-btn-es" onclick="setLanguage('es')">ES</button>
+            </div>
+            
+            <button class="btn-pdf" onclick="openProposalModal()">
+                <i class="fa-regular fa-file-pdf"></i>
+                <span class="en-text">Read Proposal</span>
+                <span class="es-text">Leer Propuesta</span>
+            </button>
+            <button class="btn-start" onclick="goToSlide(5)">
+                <i class="fa-solid fa-gamepad"></i>
+                <span class="en-text">Try Quiz Simulator</span>
+                <span class="es-text">Probar Simulador Quiz</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main App Layout -->
+    <div class="app-container">
+        
+        <!-- Interactive Sidebar -->
+        <aside class="sidebar">
+            <ul class="slide-menu-list">
+                <li class="slide-menu-item active" onclick="goToSlide(0)">
+                    <i class="fa-solid fa-gem"></i>
+                    <span class="en-text">Executive Cover</span>
+                    <span class="es-text">Portada Ejecutiva</span>
+                </li>
+                <li class="slide-menu-item" onclick="goToSlide(1)">
+                    <i class="fa-solid fa-arrows-spin"></i>
+                    <span class="en-text">Strategic Framework</span>
+                    <span class="es-text">Marco Estratégico</span>
+                </li>
+                <li class="slide-menu-item" onclick="goToSlide(2)">
+                    <i class="fa-solid fa-stethoscope"></i>
+                    <span class="en-text">Technical Diagnostics</span>
+                    <span class="es-text">Diagnósticos Técnicos</span>
+                </li>
+                <li class="slide-menu-item" onclick="goToSlide(3)">
+                    <i class="fa-solid fa-skull-crossbones"></i>
+                    <span class="en-text">Competitive Battlefield</span>
+                    <span class="es-text">Batalla Competitiva</span>
+                </li>
+                <li class="slide-menu-item" onclick="goToSlide(4)">
+                    <i class="fa-solid fa-bullseye"></i>
+                    <span class="en-text">On-Page Curation</span>
+                    <span class="es-text">Optimización On-Page</span>
+                </li>
+                <li class="slide-menu-item" onclick="goToSlide(5)">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <span class="en-text">Scent Quiz Funnel</span>
+                    <span class="es-text">Embudo Scent Quiz</span>
+                </li>
+                <li class="slide-menu-item" onclick="goToSlide(6)">
+                    <i class="fa-solid fa-globe"></i>
+                    <span class="en-text">Off-Page Blueprint</span>
+                    <span class="es-text">Plan Off-Page</span>
+                </li>
+                <li class="slide-menu-item" onclick="goToSlide(7)">
+                    <i class="fa-solid fa-route"></i>
+                    <span class="en-text">Roadmap (6 Months)</span>
+                    <span class="es-text">Hoja de Ruta</span>
+                </li>
+                <li class="slide-menu-item" onclick="goToSlide(8)">
+                    <i class="fa-solid fa-calculator"></i>
+                    <span class="en-text">Investment & Tiers</span>
+                    <span class="es-text">Inversión & Tarifas</span>
+                </li>
+            </ul>
+            <div class="sidebar-footer">
+                <p>Niche Perfumes Growth Plan</p>
+                <p>Confidential Agency Pitch &copy; 2026</p>
+            </div>
+        </aside>
+
+        <!-- Presentation Workspace -->
+        <main class="workspace">
+
+            <!-- SLIDE 1: COVER -->
+            <div class="slide-container active" id="slide-0">
+                <div class="cover-layout">
+                    <div class="cover-text">
+                        <span class="slide-tag">
+                            <span class="en-text">Bilingual E-Commerce Growth</span>
+                            <span class="es-text">Crecimiento E-Commerce Bilingüe</span>
+                        </span>
+                        
+                        <h1 class="en-text">Elevating Niche Perfumes to the <span>Digital C-Suite</span></h1>
+                        <h1 class="es-text">Elevando Niche Perfumes a la <span>Cúpula Digital</span></h1>
+                        
+                        <p class="en-text">A surgical, high-intent SEO and conversion-rate optimization (CRO) strategy. Dominating both English and Spanish search results to drive direct sales for your prestigious physical & online store.</p>
+                        <p class="es-text">Una estrategia quirúrgica de posicionamiento SEO bilingüe y conversión (CRO). Dominamos las búsquedas en inglés y español para dirigir ventas directas a tus boutiques físicas y tienda online.</p>
+                        
+                        <div style="display: flex; gap: 1rem;">
+                            <button class="btn-start" onclick="nextSlide()">
+                                <span class="en-text">Begin Presentation</span>
+                                <span class="es-text">Comenzar Presentación</span>
+                            </button>
+                            <button class="btn-pdf" onclick="openGuideModal()">
+                                <i class="fa-solid fa-book"></i>
+                                <span class="en-text">Agency Guide</span>
+                                <span class="es-text">Guía de la Agencia</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="cover-image-container">
+                        <img src="assets/luxury_boutique_display.png" alt="Niche Perfumes Boutique Showcase">
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDE 2: STRATEGIC FRAMEWORK -->
+            <div class="slide-container" id="slide-1">
+                <div class="slide-header">
+                    <span class="slide-tag">
+                        <span class="en-text">The Growth Framework</span>
+                        <span class="es-text">Marco de Crecimiento</span>
+                    </span>
+                    <h2 class="slide-title">
+                        <span class="en-text">Proprietary <span>Lexical Grounding</span> System</span>
+                        <span class="es-text">Sistema Propietario de <span>Enlazado Léxico</span></span>
+                    </h2>
+                </div>
+                <div class="slide-body">
+                    <p class="en-text" style="margin-bottom: 1.5rem;">Unlike generic templates, our premium content optimization framework blends rigorous data mapping with high-end, sensory storytelling designed specifically for high-ticket buyers:</p>
+                    <p class="es-text" style="margin-bottom: 1.5rem;">A diferencia de plantillas genéricas, nuestro sistema de optimización combina una estructuración técnica rigurosa con una redacción sensorial de lujo diseñada para captar al cliente premium:</p>
+                    
+                    <div class="card-grid">
+                        <div class="glass-card">
+                            <h3 class="en-text"><i class="fa-solid fa-brain"></i> Phase 1: Semantic Curation</h3>
+                            <h3 class="es-text"><i class="fa-solid fa-brain"></i> Fase 1: Curación Semántica</h3>
+                            
+                            <p class="en-text">We build a closed semantic map of competitor content, category search volume, and Niche Perfumes' brand specifications. This acts as a highly accurate foundation to identify keyword gaps and outline target category hubs.</p>
+                            <p class="es-text">Construimos un mapa semántico cerrado con el contenido de los competidores, volúmenes de búsqueda e información de catálogo de Niche Perfumes. Esto sirve para mapear las brechas de palabras clave en ambos idiomas.</p>
+                        </div>
+                        <div class="glass-card">
+                            <h3 class="en-text"><i class="fa-solid fa-pen-nib"></i> Phase 2: Sensory Engineering</h3>
+                            <h3 class="es-text"><i class="fa-solid fa-pen-nib"></i> Fase 2: Ingeniería Sensorial</h3>
+                            
+                            <p class="en-text">We translate these data outlines into evocative, rich descriptions. Focusing on olfactory notes, nose profiles, and recommended wear, we write stories that rank on Google while maintaining high-fashion prestige.</p>
+                            <p class="es-text">Traducimos el mapa de datos en descripciones sugerentes y ricas. Detallamos las notas olfativas y el perfil del perfumista para que las fichas rankeen en Google manteniendo el prestigio de la alta costura.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDE 3: DIAGNOSTICS -->
+            <div class="slide-container" id="slide-2">
+                <div class="slide-header">
+                    <span class="slide-tag">
+                        <span class="en-text">Boutique Audit</span>
+                        <span class="es-text">Auditoría de Boutique</span>
+                    </span>
+                    <h2 class="slide-title">
+                        <span class="en-text">4 Critical <span>Search Fills</span> On Your Site</span>
+                        <span class="es-text">4 <span>Fugas de Tráfico</span> Críticas en tu Web</span>
+                    </h2>
+                </div>
+                <div class="slide-body">
+                    <p class="en-text" style="margin-bottom: 1.5rem;">Your current site is built on a strong WooCommerce setup, but minor coding and architectural mistakes are actively hiding your products from Google. <strong>Click each item to inspect:</strong></p>
+                    <p class="es-text" style="margin-bottom: 1.5rem;">Tu web actual está construida sobre WooCommerce de forma sólida, pero pequeños fallos de código y estructura ocultan tus productos ante Google. <strong>Haz clic en cada tarjeta para inspeccionar:</strong></p>
+                    
+                    <div class="card-grid" style="grid-template-columns: repeat(4, 1fr);">
+                        <div class="glass-card" onclick="toggleDiagnostic(this, 'h1')">
+                            <h3 style="font-size: 1rem;">
+                                <i class="fa-solid fa-circle-exclamation" style="color: #e74c3c;"></i> 
+                                <span class="en-text">H1 Tag</span>
+                                <span class="es-text">Etiqueta H1</span>
+                            </h3>
+                            <p class="en-text" style="font-size: 0.8rem; margin-top: 0.5rem;">Set to "LAS MÁS VENDIDAS" instead of describing your luxury boutique brand.</p>
+                            <p class="es-text" style="font-size: 0.8rem; margin-top: 0.5rem;">Programado como "LAS MÁS VENDIDAS" en lugar de tu marca y colección de lujo.</p>
+                            
+                            <div class="diagnostic-detail" id="diag-h1" style="display:none; font-size: 0.8rem; color: var(--gold); margin-top: 0.8rem; border-top: 1px solid var(--gray-border); padding-top: 0.5rem;">
+                                <span class="en-text"><strong>Fix:</strong> Update H1 to: <em>Niche Perfumes — Luxury & Exclusive Fragrance Boutique</em>.</span>
+                                <span class="es-text"><strong>Solución:</strong> Cambiar el H1 a: <em>Niche Perfumes — Perfumería de Nicho y Alta Gama</em>.</span>
+                            </div>
+                        </div>
+                        <div class="glass-card" onclick="toggleDiagnostic(this, 'alt')">
+                            <h3 style="font-size: 1rem;">
+                                <i class="fa-solid fa-image-portrait" style="color: #e74c3c;"></i> 
+                                <span class="en-text">Image Alts</span>
+                                <span class="es-text">Alts de Imágenes</span>
+                            </h3>
+                            <p class="en-text" style="font-size: 0.8rem; margin-top: 0.5rem;">Product images have empty alt texts. 100% invisible on Google Images.</p>
+                            <p class="es-text" style="font-size: 0.8rem; margin-top: 0.5rem;">Imágenes con atributos alt vacíos. Totalmente invisibles en Google Imágenes.</p>
+                            
+                            <div class="diagnostic-detail" id="diag-alt" style="display:none; font-size: 0.8rem; color: var(--gold); margin-top: 0.8rem; border-top: 1px solid var(--gray-border); padding-top: 0.5rem;">
+                                <span class="en-text"><strong>Fix:</strong> Inject templates: <em>alt="Xerjoff Naxos Eau de Parfum 100ml"</em>.</span>
+                                <span class="es-text"><strong>Solución:</strong> Injectar plantilla: <em>alt="Xerjoff Naxos Eau de Parfum 100ml"</em>.</span>
+                            </div>
+                        </div>
+                        <div class="glass-card" onclick="toggleDiagnostic(this, 'lcp')">
+                            <h3 style="font-size: 1rem;">
+                                <i class="fa-solid fa-gauge-high" style="color: #f1c40f;"></i> 
+                                <span class="en-text">Core Web Vitals</span>
+                                <span class="es-text">Core Web Vitals</span>
+                            </h3>
+                            <p class="en-text" style="font-size: 0.8rem; margin-top: 0.5rem;">WP Rocket lazyloads above-the-fold sliders and the top row products.</p>
+                            <p class="es-text" style="font-size: 0.8rem; margin-top: 0.5rem;">WP Rocket aplica lazyload al banner principal y a los productos iniciales.</p>
+                            
+                            <div class="diagnostic-detail" id="diag-lcp" style="display:none; font-size: 0.8rem; color: var(--gold); margin-top: 0.8rem; border-top: 1px solid var(--gray-border); padding-top: 0.5rem;">
+                                <span class="en-text"><strong>Fix:</strong> Set top 4 products as <em>loading="eager"</em> &amp; <em>fetchpriority="high"</em>.</span>
+                                <span class="es-text"><strong>Solución:</strong> Marcar productos iniciales con <em>loading="eager"</em> para carga instantánea.</span>
+                            </div>
+                        </div>
+                        <div class="glass-card" onclick="toggleDiagnostic(this, 'schema')">
+                            <h3 style="font-size: 1rem;">
+                                <i class="fa-solid fa-code" style="color: #e74c3c;"></i> 
+                                <span class="en-text">Rich Schema</span>
+                                <span class="es-text">Marcado Schema</span>
+                            </h3>
+                            <p class="en-text" style="font-size: 0.8rem; margin-top: 0.5rem;">No product schema. No review stars or price showing on Google search.</p>
+                            <p class="es-text" style="font-size: 0.8rem; margin-top: 0.5rem;">Sin Schema de Producto. Sin estrellas ni precios visibles en los resultados.</p>
+                            
+                            <div class="diagnostic-detail" id="diag-schema" style="display:none; font-size: 0.8rem; color: var(--gold); margin-top: 0.8rem; border-top: 1px solid var(--gray-border); padding-top: 0.5rem;">
+                                <span class="en-text"><strong>Fix:</strong> Deploy structured JSON-LD Product &amp; Offer schema site-wide.</span>
+                                <span class="es-text"><strong>Solución:</strong> Programar JSON-LD estructurado de Producto y Oferta en el catálogo.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDE 4: COMPETITIVE BATTLEFIELD -->
+            <div class="slide-container" id="slide-3">
+                <div class="slide-header">
+                    <span class="slide-tag">
+                        <span class="en-text">Competitive Curation</span>
+                        <span class="es-text">Curación Competitiva</span>
+                    </span>
+                    <h2 class="slide-title">
+                        <span class="en-text">Dominating <span>Isolee.com & The Giants</span></span>
+                        <span class="es-text">Dominamos a <span>Isolee.com y los Gigantes</span></span>
+                    </h2>
+                </div>
+                <div class="slide-body">
+                    <div class="split-layout">
+                        <div class="split-left">
+                            <p class="en-text" style="margin-bottom: 1rem;">Notino and El Corte Inglés focus solely on high volume but have cold, automated catalogs. They fail to represent the luxurious soul and story behind premium perfume creators.</p>
+                            <p class="es-text" style="margin-bottom: 1rem;">Notino y El Corte Inglés dominan términos generales pero operan de forma fría y masiva. Son incapaces de evocar la historia y el alma de las casas artísticas de perfumes.</p>
+                            
+                            <p class="en-text" style="margin-bottom: 1rem;">Your direct competitor **Isolee.com** runs an active bilingual (ES/EN) platform with structured schema and a magazine blog to capture organic niche searches.</p>
+                            <p class="es-text" style="margin-bottom: 1rem;">Tu rival **Isolee.com** mantiene una web totalmente bilingüe (ES/EN), marcado schema de producto estructurado y un blog activo para absorber búsquedas locales de lujo.</p>
+                            
+                            <div style="background-color: var(--white); padding: 1.2rem; border-left: 3px solid var(--gold); border-radius: 4px; box-shadow: var(--shadow-soft);">
+                                <strong class="en-text">Our Strategy to Outperform Competitors:</strong>
+                                <strong class="es-text">Nuestra Estrategia de Flanqueo:</strong>
+                                
+                                <ul style="margin-left: 1.5rem; margin-top: 0.5rem; font-size: 0.95rem; display: flex; flex-direction: column; gap: 0.4rem;">
+                                    <li class="en-text">Surgical brands optimization (Xerjoff, Stéphane Humbert Lucas, Fragrance du Bois)</li>
+                                    <li class="es-text">Posicionamiento quirúrgico de marcas de lujo en ambos idiomas (ES/EN)</li>
+                                    <li class="en-text">English-language local SEO targeting wealthy tourists &amp; expats in Marbella &amp; Barcelona</li>
+                                    <li class="es-text">SEO Local enfocado en inglés para capturar el turismo premium de Marbella y Madrid</li>
+                                    <li class="en-text">The WordPress Capture Scent Quiz (a highly engaging funnel competitors lack entirely)</li>
+                                    <li class="es-text">El Scent Finder Quiz interactivo en WordPress (una ventaja competitiva que nadie más tiene)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="split-right" style="flex: 0.8;">
+                            <table style="width: 100%; border-collapse: collapse; background-color: var(--white); font-size: 0.85rem; border: 1px solid var(--gray-border);">
+                                <thead>
+                                    <tr style="background-color: var(--gray-light); border-bottom: 2px solid var(--gray-border);">
+                                        <th style="padding: 0.8rem; text-align: left;">
+                                            <span class="en-text">SEO Metric</span>
+                                            <span class="es-text">Métrica SEO</span>
+                                        </th>
+                                        <th style="padding: 0.8rem; text-align: center;">Niche Perfumes</th>
+                                        <th style="padding: 0.8rem; text-align: center;">Isolee.com</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="border-bottom: 1px solid var(--gray-light);">
+                                        <td style="padding: 0.8rem; font-weight: 500;">
+                                            <span class="en-text">Bilingual (EN/ES)</span>
+                                            <span class="es-text">Bilingüe (EN/ES)</span>
+                                        </td>
+                                        <td style="padding: 0.8rem; text-align: center; color: #2ecc71;">
+                                            <i class="fa-solid fa-circle-check"></i> 
+                                            <span class="en-text">Yes</span>
+                                            <span class="es-text">Sí</span>
+                                        </td>
+                                        <td style="padding: 0.8rem; text-align: center; color: #2ecc71;">
+                                            <i class="fa-solid fa-circle-check"></i> 
+                                            <span class="en-text">Yes</span>
+                                            <span class="es-text">Sí</span>
+                                        </td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid var(--gray-light);">
+                                        <td style="padding: 0.8rem; font-weight: 500;">
+                                            <span class="en-text">Blog / Content Hub</span>
+                                            <span class="es-text">Blog / Centro de Contenido</span>
+                                        </td>
+                                        <td style="padding: 0.8rem; text-align: center; color: #e74c3c;">
+                                            <i class="fa-solid fa-circle-xmark"></i> 
+                                            <span class="en-text">No</span>
+                                            <span class="es-text">No</span>
+                                        </td>
+                                        <td style="padding: 0.8rem; text-align: center; color: #2ecc71;">
+                                            <i class="fa-solid fa-circle-check"></i> 
+                                            <span class="en-text">Yes</span>
+                                            <span class="es-text">Sí</span>
+                                        </td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid var(--gray-light);">
+                                        <td style="padding: 0.8rem; font-weight: 500;">
+                                            <span class="en-text">Product Schema</span>
+                                            <span class="es-text">Marcado Schema</span>
+                                        </td>
+                                        <td style="padding: 0.8rem; text-align: center; color: #e74c3c;">
+                                            <i class="fa-solid fa-circle-xmark"></i> 
+                                            <span class="en-text">No</span>
+                                            <span class="es-text">No</span>
+                                        </td>
+                                        <td style="padding: 0.8rem; text-align: center; color: #2ecc71;">
+                                            <i class="fa-solid fa-circle-check"></i> 
+                                            <span class="en-text">Yes</span>
+                                            <span class="es-text">Sí</span>
+                                        </td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid var(--gray-light);">
+                                        <td style="padding: 0.8rem; font-weight: 500;">
+                                            <span class="en-text">Interactive CRO</span>
+                                            <span class="es-text">CRO Interactivo</span>
+                                        </td>
+                                        <td style="padding: 0.8rem; text-align: center; color: #e74c3c;">
+                                            <i class="fa-solid fa-circle-xmark"></i> 
+                                            <span class="en-text">No</span>
+                                            <span class="es-text">No</span>
+                                        </td>
+                                        <td style="padding: 0.8rem; text-align: center; color: #e74c3c;">
+                                            <i class="fa-solid fa-circle-xmark"></i> 
+                                            <span class="en-text">No</span>
+                                            <span class="es-text">No</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDE 5: ON-PAGE STRATEGY -->
+            <div class="slide-container" id="slide-4">
+                <div class="slide-header">
+                    <span class="slide-tag">
+                        <span class="en-text">On-Page Optimization</span>
+                        <span class="es-text">Optimización On-Page</span>
+                    </span>
+                    <h2 class="slide-title">
+                        <span class="en-text">Bilingual <span>Content & Technical Curation</span></span>
+                        <span class="es-text">Curación <span>Técnica y de Contenido</span> Bilingüe</span>
+                    </h2>
+                </div>
+                <div class="slide-body">
+                    <div class="split-layout">
+                        <div class="split-left" style="flex: 1.2;">
+                            <p class="en-text" style="margin-bottom: 1rem;">We systematically execute and respond directly to every SEO requirement on your priority list, focusing on the first **top 100 products** in both languages:</p>
+                            <p class="es-text" style="margin-bottom: 1rem;">Ejecutamos de manera sistemática cada uno de los puntos SEO solicitados, enfocándonos en el catálogo de los **primeros 100 productos clave**:</p>
+                            
+                            <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.6rem; font-size: 0.9rem;">
+                                <li><i class="fa-solid fa-check" style="color: var(--gold); margin-right: 0.5rem;"></i> 
+                                    <span class="en-text"><strong>Home, Product &amp; Category optimization:</strong> Crafting storytelling-focused luxury layouts.</span>
+                                    <span class="es-text"><strong>Contenido de Home, Producto y Categorías:</strong> Diseñados bajo un tono editorial de lujo.</span>
+                                </li>
+                                <li><i class="fa-solid fa-check" style="color: var(--gold); margin-right: 0.5rem;"></i> 
+                                    <span class="en-text"><strong>Bilingual Keyword Research:</strong> Dual-language strategy mapped to your inventory.</span>
+                                    <span class="es-text"><strong>Búsqueda Bilingüe de Keywords:</strong> Estrategia integrada en español e inglés.</span>
+                                </li>
+                                <li><i class="fa-solid fa-check" style="color: var(--gold); margin-right: 0.5rem;"></i> 
+                                    <span class="en-text"><strong>H-Tags &amp; Image Alt correction:</strong> Clean headings structure &amp; Alt text mapping.</span>
+                                    <span class="es-text"><strong>Corrección de H-tags y Alts:</strong> Jerarquía limpia de etiquetas y textos descriptivos.</span>
+                                </li>
+                                <li><i class="fa-solid fa-check" style="color: var(--gold); margin-right: 0.5rem;"></i> 
+                                    <span class="en-text"><strong>Robots.txt &amp; Schema:</strong> Standard robots crawl optimization &amp; JSON-LD Rich snippets.</span>
+                                    <span class="es-text"><strong>Robots.txt y Schema:</strong> Tránsito limpio de rastreo y rich snippets estructurados.</span>
+                                </li>
+                                <li><i class="fa-solid fa-check" style="color: var(--gold); margin-right: 0.5rem;"></i> 
+                                    <span class="en-text"><strong>Blog Engine (2-4 posts/mo):</strong> Optimizing the high-quality drafts provided by your team.</span>
+                                    <span class="es-text"><strong>Gestión de Blog (2-4 posts):</strong> Optimizamos los borradores provistos por vuestro equipo.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="split-right" style="flex: 0.8;">
+                            <div style="background-color: var(--text-dark); color: #8FCD78; font-family: monospace; font-size: 0.8rem; padding: 1.2rem; border-radius: 4px; border: 1px solid var(--gray-border); box-shadow: var(--shadow-soft);">
+                                <span style="color: #6A8A55;">// Live Schema Output Mockup</span><br>
+                                <span style="color: #E8BF6A;">{</span><br>
+                                &nbsp;&nbsp;<span style="color: #E8BF6A;">"@context"</span>: <span style="color: #A5C25C;">"https://schema.org/"</span>,<br>
+                                &nbsp;&nbsp;<span style="color: #E8BF6A;">"@type"</span>: <span style="color: #A5C25C;">"Product"</span>,<br>
+                                &nbsp;&nbsp;<span style="color: #E8BF6A;">"name"</span>: <span style="color: #A5C25C;">"God of Fire - Lucas"</span>,<br>
+                                &nbsp;&nbsp;<span style="color: #E8BF6A;">"brand"</span>: <span style="color: #E8BF6A;">{</span><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #E8BF6A;">"@type"</span>: <span style="color: #A5C25C;">"Brand"</span>,<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #E8BF6A;">"name"</span>: <span style="color: #A5C25C;">"Stéphane H. Lucas"</span><br>
+                                &nbsp;&nbsp;<span style="color: #E8BF6A;">}</span>,<br>
+                                &nbsp;&nbsp;<span style="color: #E8BF6A;">"offers"</span>: <span style="color: #E8BF6A;">{</span><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #E8BF6A;">"@type"</span>: <span style="color: #A5C25C;">"Offer"</span>,<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #E8BF6A;">"price"</span>: <span style="color: #A5C25C;">"215.00"</span>,<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #E8BF6A;">"priceCurrency"</span>: <span style="color: #A5C25C;">"EUR"</span><br>
+                                &nbsp;&nbsp;<span style="color: #E8BF6A;">}</span><br>
+                                <span style="color: #E8BF6A;">}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDE 6: SCENT QUIZ SIMULATOR -->
+            <div class="slide-container" id="slide-5">
+                <div class="slide-header">
+                    <span class="slide-tag">
+                        <span class="en-text">Interactive CRO Simulator</span>
+                        <span class="es-text">Simulador Interactivo CRO</span>
+                    </span>
+                    <h2 class="slide-title">
+                        <span class="en-text">The WordPress <span>Luxury Scent Finder</span></span>
+                        <span class="es-text">El <span>Scent Finder</span> en tu WordPress</span>
+                    </h2>
+                </div>
+                <div class="slide-body">
+                    <div class="split-layout">
+                        <div class="split-left" style="flex: 0.9;">
+                            <p class="en-text" style="margin-bottom: 1rem;">Buyers hesitate online because they cannot smell the fragrance. We overcome this with an interactive Scent Quiz funnel built directly on your site. <strong>Try the live simulator on the right:</strong></p>
+                            <p class="es-text" style="margin-bottom: 1rem;">Los compradores dudan porque no pueden oler la fragancia. Rompemos esa barrera con un embudo interactivo en tu propia web. <strong>Prueba el simulador a la derecha:</strong></p>
+                            
+                            <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.6rem; font-size: 0.9rem; color: #555;">
+                                <li><i class="fa-solid fa-gamepad" style="color: var(--gold);"></i> 
+                                    <span class="en-text"><strong>Luxury Scent Quiz:</strong> Leads buyers dynamically to their perfect olfactive match.</span>
+                                    <span class="es-text"><strong>Quiz Olfativo de Lujo:</strong> Guía al usuario de forma lúdica y elegante a su perfume ideal.</span>
+                                </li>
+                                <li><i class="fa-solid fa-box-open" style="color: var(--gold);"></i> 
+                                    <span class="en-text"><strong>Discovery Sample Set (€30):</strong> Buy 3 premium 2ml samples of top-rated niche perfumes to test.</span>
+                                    <span class="es-text"><strong>Discovery Sample Set (30 €):</strong> Permite comprar 3 viales de muestras premium de 2ml.</span>
+                                </li>
+                                <li><i class="fa-solid fa-ticket" style="color: var(--gold);"></i> 
+                                    <span class="en-text"><strong>Closing Upsell:</strong> Includes a €30 discount voucher in the box to purchase the full bottle.</span>
+                                    <span class="es-text"><strong>Conversión Total:</strong> Incluye un cupón de 30 € en la caja para comprar el frasco completo.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="split-right" style="flex: 1.1;">
+                            <div class="quiz-simulator">
+                                <!-- Step 1 -->
+                                <div class="simulator-step active" id="sim-step-1">
+                                    <div class="simulator-question">
+                                        <span class="en-text">1. What is your preferred fragrance profile?</span>
+                                        <span class="es-text">1. ¿Qué tipo de perfil olfativo prefieres?</span>
+                                    </div>
+                                    <div class="simulator-options">
+                                        <button class="simulator-btn" onclick="nextSimStep('Woody & Oud')">Woody &amp; Oud</button>
+                                        <button class="simulator-btn" onclick="nextSimStep('Fresh & Citrus')">Fresh &amp; Citrus</button>
+                                        <button class="simulator-btn" onclick="nextSimStep('Warm & Spicy')">Warm &amp; Spicy</button>
+                                    </div>
+                                </div>
+                                <!-- Step 2 -->
+                                <div class="simulator-step" id="sim-step-2">
+                                    <div class="simulator-question">
+                                        <span class="en-text">2. When do you plan to wear this signature scent?</span>
+                                        <span class="es-text">2. ¿En qué momentos planeas usar esta fragancia?</span>
+                                    </div>
+                                    <div class="simulator-options">
+                                        <button class="simulator-btn" onclick="nextSimStep2('Daily Signature')">Daily / Diario</button>
+                                        <button class="simulator-btn" onclick="nextSimStep2('Special Events')">Special Events / Eventos</button>
+                                        <button class="simulator-btn" onclick="nextSimStep2('Sensual Nights')">Sensual Nights / Noche</button>
+                                    </div>
+                                </div>
+                                <!-- Step 3: Result -->
+                                <div class="simulator-step" id="sim-result">
+                                    <div class="simulator-result-box">
+                                        <img src="assets/scent_quiz_mockup.png" class="result-image" alt="Matched Fragrance">
+                                        <div class="result-info">
+                                            <span class="result-tag">
+                                                <span class="en-text">Your Perfect Olfactive Match</span>
+                                                <span class="es-text">Tu Fragancia Ideal Encontrada</span>
+                                            </span>
+                                            <h4 class="result-name" id="matched-perfume-name">Xerjoff Naxos</h4>
+                                            <p class="result-desc" id="matched-perfume-desc">A rich honey-tobacco masterpiece layered with lavender and fresh citrus. Warm, exclusive, and opulent.</p>
+                                            <button class="btn-redeem" onclick="resetSimulator()">
+                                                <span class="en-text">Try Discovery Set — €30</span>
+                                                <span class="es-text">Probar Discovery Set — 30 €</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDE 7: OFF-PAGE BLUEPRINT -->
+            <div class="slide-container" id="slide-6">
+                <div class="slide-header">
+                    <span class="slide-tag">
+                        <span class="en-text">Authority & Local SEO</span>
+                        <span class="es-text">Autoridad y SEO Local</span>
+                    </span>
+                    <h2 class="slide-title">
+                        <span class="en-text">Premium <span>Off-Page Authority Campaigns</span></span>
+                        <span class="es-text">Campañas Premium de <span>Autoridad Off-Page</span></span>
+                    </h2>
+                </div>
+                <div class="slide-body">
+                    <p class="en-text" style="margin-bottom: 1.5rem;">To rank above large generic retailers, we build elite luxury backlink profiles and leverage your physical store footprint:</p>
+                    <p class="es-text" style="margin-bottom: 1.5rem;">Para posicionarte por encima de los grandes almacenes, desarrollamos un perfil de enlaces exclusivo y potenciamos tu presencia física local:</p>
+                    
+                    <div class="card-grid">
+                        <div class="glass-card">
+                            <h3 class="en-text"><i class="fa-solid fa-location-dot"></i> Local SEO & Physical Store Curation</h3>
+                            <h3 class="es-text"><i class="fa-solid fa-location-dot"></i> SEO Local y boutiques físicas</h3>
+                            
+                            <p class="en-text">We optimize Google Business Profiles for Marbella (Puerto Banús), Madrid, Barcelona, and Sevilla. This ensures you dominate regional map searches when tourists search for perfume shops near them.</p>
+                            <p class="es-text">Optimizamos Google Business Profiles en Marbella, Madrid, Barcelona y Sevilla. Domina las búsquedas locales en mapas cuando los turistas busquen tiendas exclusivas de perfumes.</p>
+                        </div>
+                        <div class="glass-card">
+                            <h3><i class="fa-solid fa-link"></i> Premium Backlinks & Guest Blogging</h3>
+                            <p class="en-text">We build high-reputation backlinks by placing expert guest posts and reviews on premium fragrance platforms, luxury journals, and high-fashion lifestyle publications to secure domain trust.</p>
+                            <p class="es-text">Conseguimos menciones y artículos editoriales en revistas de moda, estilo de vida y blogs de alta perfumería, transmitiendo autoridad de dominio directa a tu catálogo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDE 8: ROADMAP -->
+            <div class="slide-container" id="slide-7">
+                <div class="slide-header">
+                    <span class="slide-tag">
+                        <span class="en-text">Roadmap & Milestones</span>
+                        <span class="es-text">Hoja de Ruta</span>
+                    </span>
+                    <h2 class="slide-title">
+                        <span class="en-text">6-Month <span>Growth & Performance Timeline</span></span>
+                        <span class="es-text">Cronograma de <span>Crecimiento a 6 Meses</span></span>
+                    </h2>
+                </div>
+                <div class="slide-body">
+                    <div class="roadmap-timeline">
+                        <div class="roadmap-line"></div>
+                        <div class="roadmap-node active" onclick="showRoadmapDetail(1)">
+                            <div class="roadmap-dot">01</div>
+                            <div class="roadmap-title">
+                                <span class="en-text">Month 1</span>
+                                <span class="es-text">Mes 1</span>
+                            </div>
+                            <div class="roadmap-desc">
+                                <span class="en-text">Foundations & Technical</span>
+                                <span class="es-text">Fundamentos y Técnico</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" onclick="showRoadmapDetail(2)">
+                            <div class="roadmap-dot">02</div>
+                            <div class="roadmap-title">
+                                <span class="en-text">Month 2</span>
+                                <span class="es-text">Mes 2</span>
+                            </div>
+                            <div class="roadmap-desc">
+                                <span class="en-text">On-Page & Landing Page</span>
+                                <span class="es-text">On-Page y Landing Page</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" onclick="showRoadmapDetail(3)">
+                            <div class="roadmap-dot">03</div>
+                            <div class="roadmap-title">
+                                <span class="en-text">Month 3</span>
+                                <span class="es-text">Mes 3</span>
+                            </div>
+                            <div class="roadmap-desc">
+                                <span class="en-text">Local SEO & Backlinks</span>
+                                <span class="es-text">SEO Local y Enlaces</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" onclick="showRoadmapDetail(4)">
+                            <div class="roadmap-dot">04</div>
+                            <div class="roadmap-title">
+                                <span class="en-text">Month 4-6</span>
+                                <span class="es-text">Meses 4-6</span>
+                            </div>
+                            <div class="roadmap-desc">
+                                <span class="en-text">Scaled Growth & Blog</span>
+                                <span class="es-text">Crecimiento y Blog</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="roadmap-detail-card" id="roadmap-detail-txt">
+                        <strong>Month 1 Activities:</strong> We immediately clean up site-wide H-tags (fixing Homepage H1), perform complete bilingual keyword research, compress images, remove viewport lazy-loading, and submit XML sitemaps to GSC for rapid indexing.
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDE 9: PRICING & TIERS -->
+            <div class="slide-container" id="slide-8">
+                <div class="slide-header">
+                    <span class="slide-tag">
+                        <span class="en-text">Commercial Proposal</span>
+                        <span class="es-text">Propuesta Comercial</span>
+                    </span>
+                    <h2 class="slide-title">
+                        <span class="en-text">Strategic <span>6-Month Contract Contracts</span> & ROI</span>
+                        <span class="es-text">Tarifas y <span>Contratos a 6 Meses</span></span>
+                    </h2>
+                </div>
+                <div class="slide-body">
+                    <div style="display: flex; gap: 1.5rem; width: 100%;">
+                        <div class="pricing-section" style="flex: 2.2;">
+                            <!-- Tier 1 -->
+                            <div class="pricing-column">
+                                <div>
+                                    <div class="price-title">
+                                        <span class="en-text">Tier 1: Foundations</span>
+                                        <span class="es-text">Tier 1: Fundamentos</span>
+                                    </div>
+                                    <div class="price-val">
+                                        <span class="en-text">€1,200 <span>/ mo</span></span>
+                                        <span class="es-text">1.200 € <span>/ mes</span></span>
+                                    </div>
+                                    <div class="price-contract-total">
+                                        <span class="en-text">Month 1: €1,499<br>Total 6-Months: €7,499</span>
+                                        <span class="es-text">Mes 1: 1.499 €<br>Total 6 Meses: 7.499 €</span>
+                                    </div>
+                                    <ul class="price-features">
+                                        <li><i class="fa-solid fa-check"></i> 
+                                            <span class="en-text">Technical &amp; Speed Fixes</span>
+                                            <span class="es-text">Correcciones Técnicas y Velocidad</span>
+                                        </li>
+                                        <li><i class="fa-solid fa-check"></i> 
+                                            <span class="en-text">Basic Schema Injection</span>
+                                            <span class="es-text">Inyección de Schema Básico</span>
+                                        </li>
+                                        <li><i class="fa-solid fa-check"></i> 
+                                            <span class="en-text">Heading H1 Correction</span>
+                                            <span class="es-text">Corrección de Encabezado H1</span>
+                                        </li>
+                                        <li><i class="fa-solid fa-check"></i> 
+                                            <span class="en-text">Robots.txt Optimization</span>
+                                            <span class="es-text">Optimización de Robots.txt</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button class="btn-pricing" onclick="updatePricingCalc(1200, 1499)">
+                                    <span class="en-text">Select Tier 1</span>
+                                    <span class="es-text">Seleccionar Tier 1</span>
+                                </button>
+                            </div>
+                            <!-- Tier 2 -->
+                            <div class="pricing-column recommended">
+                                <div class="recommended-badge">
+                                    <span class="en-text">Recommended</span>
+                                    <span class="es-text">Recomendado</span>
+                                </div>
+                                <div>
+                                    <div class="price-title" style="color: var(--gold);">
+                                        <span class="en-text">Tier 2: Growth Engine</span>
+                                        <span class="es-text">Tier 2: Motor de Crecimiento</span>
+                                    </div>
+                                    <div class="price-val">
+                                        <span class="en-text">€2,400 <span>/ mo</span></span>
+                                        <span class="es-text">2.400 € <span>/ mes</span></span>
+                                    </div>
+                                    <div class="price-contract-total" style="color: var(--gold);">
+                                        <span class="en-text">Month 1: €2,799<br>Total 6-Months: €14,799</span>
+                                        <span class="es-text">Mes 1: 2.799 €<br>Total 6 Meses: 14.799 €</span>
+                                    </div>
+                                    <ul class="price-features">
+                                        <li><i class="fa-solid fa-check"></i> 
+                                            <span class="en-text">Full 100 Products Content</span>
+                                            <span class="es-text">Contenido para 100 Productos</span>
+                                        </li>
+                                        <li><i class="fa-solid fa-check"></i> 
+                                            <span class="en-text">Alt Text for 100 Products</span>
+                                            <span class="es-text">Textos Alt para 100 Productos</span>
+                                        </li>
+                                        <li><i class="fa-solid fa-check"></i> <strong>
+                                            <span class="en-text">Scent Quiz Capture Page</span>
+                                            <span class="es-text">Página de Captación Scent Quiz</span>
+                                        </strong></li>
+                                        <li><i class="fa-solid fa-check"></i> 
+                                            <span class="en-text">2–4 Blog Posts Managed</span>
+                                            <span class="es-text">Gestión de 2–4 Posts de Blog</span>
+                                        </li>
+                                        <li><i class="fa-solid fa-check"></i> 
+                                            <span class="en-text">Premium Backlinks Campaign</span>
+                                            <span class="es-text">Campaña de Backlinks Premium</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button class="btn-pricing" onclick="updatePricingCalc(2400, 2799)">
+                                    <span class="en-text">Select Tier 2</span>
+                                    <span class="es-text">Seleccionar Tier 2</span>
+                                </button>
+                            </div>
+                            <!-- Tier 3 -->
+                            <div class="pricing-column">
+                                <div>
+                                    <div class="price-title" style="color: var(--gold);">
+                                        <span class="en-text">Tier 3: Elite Headless</span>
+                                        <span class="es-text">Tier 3: Elite Headless</span>
+                                    </div>
+                                    <div class="price-val">
+                                        <span class="en-text">€3,900 <span>/ mo</span></span>
+                                        <span class="es-text">3.900 € <span>/ mes</span></span>
+                                    </div>
+                                    <div class="price-contract-total">
+                                        <span class="en-text">Month 1: €5,900<br>Total 6-Months: €25,400</span>
+                                        <span class="es-text">Mes 1: 5.900 €<br>Total 6 Meses: 25.400 €</span>
+                                    </div>
+                                    <ul class="price-features">
+                                        <li><i class="fa-solid fa-check"></i> <strong>
+                                            <span class="en-text">Headless E-Commerce Build</span>
+                                            <span class="es-text">Desarrollo Headless E-Commerce</span>
+                                        </strong></li>
+                                        <li><i class="fa-solid fa-check"></i> <strong>
+                                            <span class="en-text">Stunning scrolling &amp; anims</span>
+                                            <span class="es-text">Efectos de Scroll y Animaciones</span>
+                                        </strong></li>
+                                        <li><i class="fa-solid fa-check"></i> 
+                                            <span class="en-text">Bilingual ES/EN entire site</span>
+                                            <span class="es-text">Sitio Bilingüe ES/EN Completo</span>
+                                        </li>
+                                        <li><i class="fa-solid fa-check"></i> 
+                                            <span class="en-text">Active PR Links &amp; Press features</span>
+                                            <span class="es-text">PR Activo y Prensa Internacional</span>
+                                        </li>
+                                        <li><i class="fa-solid fa-check"></i> 
+                                            <span class="en-text">100/100 Core Web Vitals score</span>
+                                            <span class="es-text">Puntuación Core Web Vitals 100/100</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button class="btn-pricing" onclick="updatePricingCalc(3900, 5900)">
+                                    <span class="en-text">Select Tier 3</span>
+                                    <span class="es-text">Seleccionar Tier 3</span>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Interactive ROI Calculator (Extremely Persuasive) -->
+                        <div class="calculator-card">
+                            <h3><i class="fa-solid fa-chart-line"></i> 
+                                <span class="en-text">ROI Projections</span>
+                                <span class="es-text">Proyecciones de ROI</span>
+                            </h3>
+                            
+                            <div class="calc-group">
+                                <label>
+                                    <span class="en-text">Selected Monthly rate:</span>
+                                    <span class="es-text">Tarifa Mensual Seleccionada:</span>
+                                </label>
+                                <div class="calc-input-row">
+                                    <span style="font-weight: 600; color: var(--gold); font-size: 1.1rem;" id="calc-tier-cost">€2,400 / mo</span>
+                                </div>
+                            </div>
+                            
+                            <div class="calc-group">
+                                <label>
+                                    <span class="en-text">Average Order Value (AOV):</span>
+                                    <span class="es-text">Valor Promedio del Pedido (AOV):</span>
+                                </label>
+                                <div class="calc-input-row">
+                                    <input type="range" class="calc-slider" id="slider-aov" min="150" max="350" value="220" oninput="calculateROI()">
+                                    <span class="calc-val" id="val-aov">€220</span>
+                                </div>
+                            </div>
+                            
+                            <div class="calc-group">
+                                <label>
+                                    <span class="en-text">Est. Additional Sales / Month:</span>
+                                    <span class="es-text">Ventas Adicionales Est. / Mes:</span>
+                                </label>
+                                <div class="calc-input-row">
+                                    <input type="range" class="calc-slider" id="slider-sales" min="5" max="100" value="30" oninput="calculateROI()">
+                                    <span class="calc-val" id="val-sales">30</span>
+                                </div>
+                            </div>
+                            
+                            <div class="calc-results">
+                                <div class="calc-res-row">
+                                    <span>
+                                        <span class="en-text">Break-Even Target:</span>
+                                        <span class="es-text">Objetivo de Amortización:</span>
+                                    </span>
+                                    <span id="res-breakeven" style="color: #BBB;">11 orders</span>
+                                </div>
+                                <div class="calc-res-row">
+                                    <span>
+                                        <span class="en-text">New Monthly Revenue:</span>
+                                        <span class="es-text">Nuevos Ingresos Mensuales:</span>
+                                    </span>
+                                    <span id="res-revenue" style="color: #BBB;">€6,600</span>
+                                </div>
+                                <div class="calc-res-row">
+                                    <span>
+                                        <span class="en-text">Net Monthly Profit:</span>
+                                        <span class="es-text">Beneficio Neto Mensual:</span>
+                                    </span>
+                                    <span id="res-profit">€4,200 / mo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Bottom Controls Bar -->
+    <div class="controls-bar">
+        <div class="slide-counter-txt">
+            <span class="en-text">Slide <span id="slide-num">1</span> of 9</span>
+            <span class="es-text">Diapositiva <span id="slide-num-es">1</span> de 9</span>
+        </div>
+        <div class="progress-indicator">
+            <div class="progress-dot active" onclick="goToSlide(0)"></div>
+            <div class="progress-dot" onclick="goToSlide(1)"></div>
+            <div class="progress-dot" onclick="goToSlide(2)"></div>
+            <div class="progress-dot" onclick="goToSlide(3)"></div>
+            <div class="progress-dot" onclick="goToSlide(4)"></div>
+            <div class="progress-dot" onclick="goToSlide(5)"></div>
+            <div class="progress-dot" onclick="goToSlide(6)"></div>
+            <div class="progress-dot" onclick="goToSlide(7)"></div>
+            <div class="progress-dot" onclick="goToSlide(8)"></div>
+        </div>
+        <div class="navigation-btns">
+            <button class="btn-nav" onclick="prevSlide()"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="btn-nav" onclick="nextSlide()"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Premium Document Modal Overlay -->
+    <div id="document-modal" class="modal-overlay" onclick="closeModalOnOverlay(event)">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h2 id="modal-title" class="brand-title">DOCUMENT</h2>
+                <button class="modal-close" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div id="modal-body" class="modal-body">
+                <!-- Content will be dynamically swapped -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Proposal Content Template (Bilingual, matches global switcher) -->
+    <div id="proposal-content-template" style="display: none;">
+        <div class="en-text">
+            <h1>🧴 Premium Search &amp; Conversion Strategy</h1>
+            <p style="font-size: 0.95rem; color: #777;">
+                <strong>Date:</strong> May 2026<br>
+                <strong>Client:</strong> Cecilia &amp; the Niche Perfumes Team<br>
+                <strong>Website:</strong> <a href="https://www.nicheperfumes.net" target="_blank" style="color: var(--gold); text-decoration: none;">nicheperfumes.net</a><br>
+                <strong>Presented by:</strong> Senior E-Commerce Growth &amp; Search Strategy Consultancy
+            </p>
+            <hr>
+            
+            <h2>✉️ Executive Summary</h2>
+            <p>Dear Cecilia,</p>
+            <p>Thank you for the opportunity to present this comprehensive, search-driven growth proposal. We have conducted a rigorous technical audit of <strong>nicheperfumes.net</strong>, mapped the luxury fragrance competitive landscape in Spain and Europe, and designed an end-to-end campaign specifically engineered for your brand’s exceptional catalog.</p>
+            <p>Your physical boutiques in Marbella (Puerto Banús), Madrid, Barcelona, and Sevilla represent the absolute pinnacle of high-end luxury. Currently, there is a significant gap between your brand's offline prestige and its digital search footprint. Premium buyers are actively searching for the rare, high-ticket creations you stock—such as <strong>Xerjoff (Naxos, Torino 25)</strong>, <strong>Stéphane Humbert Lucas (God of Fire)</strong>, <strong>Fragrance du Bois (Sirène Privée)</strong>, and <strong>Spirit of Kings (Harmony)</strong>—but your website is largely invisible on Google's most valuable results pages. Mass-market retailers like Notino, large department stores like El Corte Inglés, and direct specialty competitors like Isolee.com are capturing this high-intent premium traffic.</p>
+            <p>Our proposal is designed to close this gap completely. We do not focus on flat "keyword rankings." We focus on <strong>driving high-intent, bilingual organic traffic that converts into luxury e-commerce sales</strong>. We have addressed every single On-Page and Off-Page requirement outlined in your request, mapped them to a rigorous technical diagnostic, and integrated an incredibly persuasive <strong>6-Month Campaign Roadmap</strong> with clear, predictable investment structures.</p>
+            <p>Furthermore, we propose a game-changing <strong>Luxury Conversion Scent Quiz</strong> built on your existing platform, alongside an elite <strong>Headless / Next-Gen Frontend</strong> option with breathtaking custom animations to differentiate Niche Perfumes entirely from the rest of the market.</p>
+            <p>We look forward to partnering with the Niche Perfumes team to establish your boutique as the undisputed digital authority in luxury perfumery.</p>
+            <p>Warm regards,<br><strong>The E-Commerce Growth &amp; Search Strategy Team</strong></p>
+            
+            <h2>🩺 Part 1: Current Website Diagnostic &amp; Opportunities</h2>
+            <p>Your site is built on a robust, highly scalable stack: <strong>WordPress + WooCommerce</strong>, optimized with <strong>WP Rocket</strong> and managed with <strong>Yoast SEO</strong>. This is excellent, as it allows us full control over the technical structure without requiring a costly platform migration.</p>
+            <p>However, our deep crawl has identified several critical, easily fixable search bottlenecks that are currently costing you direct revenue:</p>
+            
+            <h3>1.1 Homepage H1 Tag Correction (🔴 Critical)</h3>
+            <ul>
+                <li><strong>Current State:</strong> The only H1 tag on your homepage is <code>&lt;h1&gt;LAS MÁS VENDIDAS&lt;/h1&gt;</code> (which sits above the best-sellers product section).</li>
+                <li><strong>The Search Bottleneck:</strong> Google's crawlers interpret the H1 as the primary theme of the page. Currently, Google understands your store's main topic as "best sellers" rather than your prestigious brand name and curated collection.</li>
+                <li><strong>Our Fix:</strong> We will update this site-wide. Your homepage H1 will be modified to an elegant, custom-styled luxury title: <code>&lt;h1&gt;Niche Perfumes — Luxury, Artistic &amp; Exclusive Fragrance Boutique&lt;/h1&gt;</code>.</li>
+            </ul>
+            
+            <h3>1.2 Empty Image Alt Texts (🔴 Critical Traffic Loss)</h3>
+            <ul>
+                <li><strong>Current State:</strong> Almost all live product images on your homepage, brand grids, and category listings have empty alt tags: <code>&lt;img src=".../sirene-prive.webp" alt=""&gt;</code>.</li>
+                <li><strong>The Search Bottleneck:</strong> Google cannot "see" images. Without Alt texts, your stunning luxury bottles are completely invisible in Google Images searches. High-end buyers search heavily on Google Images for fragrance aesthetics, unboxing reviews, and bottle presentation.</li>
+                <li><strong>Our Fix:</strong> We will implement our proprietary image naming and Alt-text mapping protocol. Every image will follow an elegant, keyword-rich luxury template: <code>&lt;img src="sirene-prive.webp" alt="Sirène Privée by Fragrance du Bois — Luxury Eau de Parfum 75ml"&gt;</code>.</li>
+            </ul>
+            
+            <h3>1.3 Viewport Image Loading &amp; Core Web Vitals (🟡 Performance)</h3>
+            <ul>
+                <li><strong>Current State:</strong> WP Rocket's lazy-loading is active, but it is currently applied too aggressively, lazy-loading the main homepage slider and the first row of products (the viewport visible "above the fold").</li>
+                <li><strong>The Search Bottleneck:</strong> Delays the loading of the main visual block. This severely penalizes your <strong>Largest Contentful Paint (LCP)</strong> metric, a critical ranking factor in Google's PageSpeed algorithm.</li>
+                <li><strong>Our Fix:</strong> We will add precise exclusion rules in WP Rocket for the first 4–6 visible viewport images, marking them with high-priority tags for instant rendering: <code>&lt;img src="hero-banner.jpg" loading="eager" fetchpriority="high" alt="Exclusive Niche Perfumes Collection"&gt;</code>.</li>
+            </ul>
+            
+            <h3>1.4 Structured Schema Markup (🔴 Major Disadvantage)</h3>
+            <ul>
+                <li><strong>Current State:</strong> No Product Schema, Offer Schema, LocalBusiness Schema, or Breadcrumb Schema is active on <code>nicheperfumes.net</code>.</li>
+                <li><strong>The Search Bottleneck:</strong> When users search for your products, your competitors appear in Google with price tags (€245.00), review stars, and "In Stock" labels, capturing all the clicks. Your listings appear as flat, generic text lines.</li>
+                <li><strong>Our Fix:</strong> We will build and inject structured JSON-LD Schema across your entire catalog, ensuring your listings stand out as prominent, visual "Rich Snippets" on Google.</li>
+            </ul>
+            
+            <h2>🥊 Part 2: Deep Competitive Battlefield</h2>
+            <p>To dominate luxury search, Niche Perfumes must capitalize on the exact gaps left by competitors who are currently capturing your traffic:</p>
+            
+            <h3>2.1 The Competitive Landscape</h3>
+            <ol>
+                <li><strong>Isolee.com (Specialty Competitor):</strong> Built on PrestaShop, they operate a physical luxury store in Galería Canalejas (Madrid's luxury epicenter), mirroring your boutique presence. They utilize a fully bilingual (ES/EN) site, an active blog engine, and structured data.</li>
+                <li><strong>Notino &amp; El Corte Inglés (The Mass-Market Giants):</strong> They hold immense domain authority, but their sites are cold, corporate, and completely generic. They treat a €300 bottle of Xerjoff like a €10 supermarket lotion. They cannot tell the emotional story of an artistic fragrance.</li>
+                <li><strong>The Perfumery Barcelona &amp; All Yours Bcn (Boutique Competitors):</strong> Highly specialized but limited in national reach, catalog size, and regional local search presence.</li>
+            </ol>
+            
+            <h3>2.2 Direct Comparison: Niche Perfumes vs. Isolee.com</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Search &amp; Brand Metric</th>
+                        <th>nicheperfumes.net (Current)</th>
+                        <th>Isolee.com</th>
+                        <th>Our Battle Plan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Bilingual SEO (EN/ES)</strong></td>
+                        <td>⚠️ Present but unoptimized</td>
+                        <td>✅ Fully bilingual &amp; structured</td>
+                        <td><strong>Optimize both versions</strong> of the top 100 products for EN &amp; ES</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Blog / Magazine Hub</strong></td>
+                        <td>❌ None active</td>
+                        <td>✅ Active blog (<code>ybc_blog</code>)</td>
+                        <td>Launch <code>/magazine</code> to rank for high-intent search guides</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Product Schema Markup</strong></td>
+                        <td>❌ Completely missing</td>
+                        <td>✅ Full Product &amp; Offer Schema</td>
+                        <td>Inject custom JSON-LD Schema to capture search "Rich Snippets"</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Image Alt Tags</strong></td>
+                        <td>❌ Blank / Empty</td>
+                        <td>🟢 Mostly optimized</td>
+                        <td>Apply pixel-perfect sensory alt tags for Google Images</td>
+                    </tr>
+                    <tr>
+                        <td><strong>UX &amp; High-End Animations</strong></td>
+                        <td>🟡 Standard WooCommerce layout</td>
+                        <td>🟡 Standard PrestaShop layout</td>
+                        <td><strong>Create an elite custom frontend</strong> with stunning, smooth transitions</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3>2.3 Our Unfair Advantage: How We Beat the Giants</h3>
+            <ul>
+                <li><strong>Double-Language Optimization (ES/EN):</strong> Niche Perfumes is bilingual, which is a massive asset. We will optimize both Spanish and English versions of your top 100 products. This allows us to capture the highly profitable market of English-speaking expats and luxury tourists residing in Marbella (Puerto Banús), Madrid, and Barcelona.</li>
+                <li><strong>Exclusivity &amp; Curation (E-E-A-T):</strong> Notino cannot offer deep scent pyramids, stories about perfumists, or personal consulting. We will position Niche Perfumes as the ultimate trusted authority.</li>
+                <li><strong>Breathtaking UX &amp; Animations:</strong> We will design custom, high-end interactive elements and scrolling animations that make Niche Perfumes look like a modern work of art, separating you entirely from generic templates.</li>
+            </ul>
+            
+            <h2>🎯 Part 3: Actionable On-Page SEO Campaign</h2>
+            <p>We have addressed every requirement you requested, detailing exactly how we will execute them over a dedicated <strong>6-Month Contract</strong>:</p>
+            
+            <h3>3.1 Content Creation &amp; Optimization (Home, Product, &amp; Category Pages)</h3>
+            <p>We will rewrite and optimize the copy across your homepage, top 100 product pages, and brand categories, ensuring they tell an evocative story while matching search engine requirements:</p>
+            <ul>
+                <li><strong>Product Pages:</strong> We will structure descriptions to include the <strong>olfactory pyramid</strong> (Top Notes, Heart Notes, Base Notes), recommended wearing seasons, and the perfumer's narrative, written for both English and Spanish audiences.</li>
+                <li><strong>Category &amp; Brand Pages (e.g., Xerjoff, Stéphane Humbert Lucas):</strong> We will create bespoke, optimized introduction texts (200–300 words) detailing the history of each artistic fragrance house to rank for premium transactional keywords.</li>
+            </ul>
+            
+            <h3>3.2 Bilingual Keyword Research &amp; Optimization</h3>
+            <p>Since your website operates in both Spanish and English, <strong>we will perform comprehensive keyword mapping in both languages</strong>:</p>
+            <ul>
+                <li><em>Spanish Queries:</em> "comprar perfume Xerjoff España," "Stéphane Humbert Lucas God of Fire precio," "perfumes de nicho orientales online."</li>
+                <li><em>English Queries:</em> "buy Xerjoff Naxos Europe," "where to buy Stéphane Humbert Lucas in Marbella," "exclusive long-lasting oud perfumes."</li>
+                <li>We will align these search terms with your top 100 products to ensure both language versions rank at the top of their respective search engines.</li>
+            </ul>
+            
+            <h3>3.3 Site-Wide H-Tags Correction</h3>
+            <p>We will implement a clean, logical heading hierarchy across your entire site so search engines can crawl it seamlessly:</p>
+            <ul>
+                <li><strong>H1:</strong> Reserved exclusively for the main page title (e.g., Product Name on product pages, Brand Name on category pages, and Core Value Proposition on the Homepage).</li>
+                <li><strong>H2:</strong> Used for main page sections (e.g., "The Olfactory Pyramid," "About the House of Xerjoff," "Customer Reviews").</li>
+                <li><strong>H3:</strong> Used for secondary titles within sections (e.g., individual note descriptions or product names in cross-sell grids).</li>
+            </ul>
+            
+            <h3>3.4 Image Optimization &amp; Alt Text Addition</h3>
+            <ul>
+                <li>We will verify and add alt text to <strong>all images on your top 100 product pages</strong>.</li>
+                <li>Every alt text will combine the Brand Name, Product Name, Volume (ml), and transactional keyword: <code>alt="God of Fire by Stéphane Humbert Lucas 777 — Exclusive Niche Perfume 50ml"</code></li>
+                <li>We will implement Next-Gen image formats (<code>.webp</code>) and compress assets without losing luxury image quality, ensuring lightning-fast load times.</li>
+            </ul>
+            
+            <h3>3.5 SEO Title and Meta Description Optimization</h3>
+            <p>We will write compelling, high-converting metadata for your top 100 products, carefully fitting within Google's character limits (60 characters for titles, 155 for descriptions):</p>
+            <ul>
+                <li><strong>Optimized Title Example:</strong> <code>Xerjoff Naxos Eau de Parfum 100ml | Official Store Spain</code></li>
+                <li><strong>Optimized Meta Description Example:</strong> <code>Discover Xerjoff Naxos at Niche Perfumes. Enjoy rich honey, tobacco &amp; citrus notes. 100% authentic. Free fast shipping in Spain &amp; Europe. Buy online now.</code></li>
+            </ul>
+            
+            <h3>3.6 Robots.txt &amp; Sitemap Optimization</h3>
+            <ul>
+                <li>We will clean up your <code>robots.txt</code> file to ensure search crawlers can easily scan all product and category URLs while blocking indexation of thin, irrelevant pages (like cart pages, checkout pages, and account parameters) that waste your crawl budget.</li>
+                <li>We will generate a clean, dynamic XML Sitemap and submit it directly to <strong>Google Search Console</strong> to ensure rapid indexing of all new content.</li>
+            </ul>
+            
+            <h3>3.7 Schema Markup Implementation</h3>
+            <p>We will build and inject structured JSON-LD data into all product pages. This guarantees your products stand out with rich search results:</p>
+            <pre><code>{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "God of Fire - Stéphane Humbert Lucas",
+  "image": "https://www.nicheperfumes.net/wp-content/uploads/god-of-fire.jpg",
+  "description": "An exquisite amber woody fragrance capturing pure luxury with notes of mango, ginger, and blue hemlock.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Stéphane Humbert Lucas"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "EUR",
+    "price": "215.00",
+    "availability": "https://schema.org/InStock",
+    "itemCondition": "https://schema.org/NewCondition",
+    "url": "https://www.nicheperfumes.net/product/god-of-fire/"
+  }
+}</code></pre>
+            
+            <h3>3.8 Add Images to All Live Product Pages</h3>
+            <p>We will conduct a comprehensive audit of your top 100 products to ensure every single one features a complete gallery of <strong>high-resolution luxury images</strong> (including bottle shots, packaging/box shots, and lifestyle/texture imagery). This builds trust and lowers purchase hesitation.</p>
+            
+            <h3>3.9 Dynamic Editorial Blog Engine (2–4 Posts per Month)</h3>
+            <p>You mentioned your internal team will provide the core content drafts for your blogs. We will turn these drafts into <strong>powerful SEO ranking machines</strong>:</p>
+            <ul>
+                <li><strong>The Optimization Process:</strong> We will take your team's raw drafts and optimize them with target long-tail keywords, structure them with appropriate sub-headers (H2, H3), insert optimized image alt tags, configure dynamic internal links to your category/product pages, and write compelling SEO metadata.</li>
+                <li><strong>Sample Editorial Calendar Ideas (High-Intent Topics):</strong>
+                    <ol>
+                        <li><em>The Ultimate Expat Guide to Unisex Niche Fragrances in Marbella.</em></li>
+                        <li><em>Why Xerjoff Naxos is the World's Most Coveted Honey-Tobacco Scent (Review).</em></li>
+                        <li><em>Unveiling Stéphane Humbert Lucas: The Mystery Behind God of Fire.</em></li>
+                        <li><em>How to Choose a Signature Luxury Oud Perfume for the Spanish Summer.</em></li>
+                    </ol>
+                </li>
+            </ul>
+            
+            <h2>🌐 Part 4: Off-Page SEO &amp; Authority Growth Strategy</h2>
+            <p>To rank above established giants like Notino, Google needs to see your site as a trusted, high-authority domain. We will build this authority through a clean, premium off-page campaign:</p>
+            
+            <h3>4.1 Link Building to Improve Website Authority</h3>
+            <p>We avoid spammy, low-quality link building that could risk getting your site penalized. Instead, we focus on <strong>high-reputation luxury backlinks</strong>:</p>
+            <ul>
+                <li>We will target links from premium lifestyle platforms, high-end fashion magazines, and beauty journals.</li>
+                <li>We will build relationships with high-authority fragrance enthusiast platforms (such as Fragrantica contributors, Basenotes, and niche-specific blogs).</li>
+            </ul>
+            
+            <h3>4.2 Business Profile Creation &amp; Local SEO (E-E-A-T Booster)</h3>
+            <p>Your physical boutiques are highly valuable assets that major online-only stores lack. We will leverage them to boost your site's overall trust score:</p>
+            <ul>
+                <li><strong>Google Business Profile (GBP) Optimization:</strong> We will optimize and align your business listings in Madrid, Marbella (Puerto Banús), Barcelona, and Sevilla. This ensures you dominate local map search results when wealthy tourists search for "perfume shop near me" or "niche perfumes Marbella."</li>
+                <li><strong>Luxury Directory Submissions:</strong> We will register your brand in verified high-end shopping directories, tourist luxury guides, and regional business directories.</li>
+                <li><strong>Trustpilot Integration:</strong> We will assist in setting up an automated system to gather verified, positive client reviews, displaying them on your site to build strong trust with first-time buyers.</li>
+            </ul>
+            
+            <h3>4.3 Strategic Blog Comments</h3>
+            <p>We will engage in manual, high-value commenting on prominent luxury fragrance blogs.</p>
+            <ul>
+                <li>We will provide helpful, expert commentary on active industry discussions, linking back naturally to Niche Perfumes' relevant educational posts to build referral traffic and brand trust.</li>
+            </ul>
+            
+            <h3>4.4 Premium Guest Posting</h3>
+            <p>We will pitch, write, and place high-quality editorial articles on authoritative beauty, fashion, and luxury lifestyle sites.</p>
+            <ul>
+                <li>Each guest post will focus on luxury fragrance education (e.g., <em>"The Rise of Artistic Perfumery in Spain"</em>), naturally linking back to your category or brand pages to pass valuable search authority directly to your domain.</li>
+            </ul>
+            
+            <h2>💎 Part 5: The High-Converting WordPress Capture Page</h2>
+            <p>To maximize your ROI, we propose building a dedicated, high-converting entry point directly on your existing WordPress + WooCommerce site, designed to convert cold search traffic into buyers:</p>
+            
+            <h3>Option A: The Scent Discovery Capture Page (Recommended)</h3>
+            <p>An elegant, fast-loading, storytelling page that introduces a "Scent Discovery Program":</p>
+            <ul>
+                <li><strong>The Interactive Scent Quiz:</strong> An elegant, 5-question visual quiz (e.g., preferred fragrance family, wearing occasions, personality) that guides the user to their matched fragrance.</li>
+                <li><strong>The Low-Barrier Discovery Set:</strong> Visitors can purchase a curated "Discovery Set" of 3-5 premium samples (decants) of your top brands (Xerjoff, Stéphane Humbert Lucas) for €30.</li>
+                <li><strong>The Closing Upsell:</strong> Inside the box, the customer receives a €30 discount voucher to purchase the full €200+ bottle within 30 days. This has a conversion rate 3 to 4 times higher than standard product grids.</li>
+            </ul>
+            
+            <h3>Option B: The Simple Premium Landing Page</h3>
+            <p>A minimalist, conversion-focused single page that showcases your top 5 bestsellers with clean aesthetics, high-definition imagery, sensory notes, and direct, friction-free checkout buttons that bypass the shopping cart.</p>
+            
+            <h2>🗺️ Part 6: 6-Month Roadmap &amp; Milestones</h2>
+            <p>Our strategic plan is structured to deliver immediate technical quick wins in the first month, followed by continuous growth:</p>
+            <ul>
+                <li><strong>Month 1: Setup &amp; Foundations</strong><br>Correct Homepage H1, add sitemaps, optimize robots.txt, adjust lazy-loading, add structured JSON-LD Schema to top product pages, and complete bilingual keyword mapping.</li>
+                <li><strong>Month 2: On-Page Curation &amp; Capture Page Launch</strong><br>Rewrite metadata and sensory copy for your top 100 products (ES/EN). Apply Alt tags to all images. Design, code, and launch your custom WordPress Scent Quiz Capture Page. Publish the first 2 optimized blog posts from your drafts.</li>
+                <li><strong>Month 3: Local SEO &amp; Authority Outreach</strong><br>Optimize Google Business Profiles for Madrid, Marbella, Barcelona, and Sevilla. Integrate verified Trustpilot reviews. Launch high-end link-building campaigns. Deliver the First SEO Monthly Performance Report (starting traffic vs. new organic traffic).</li>
+                <li><strong>Months 4-6: Scaled Growth &amp; Content Expansion</strong><br>Scale link building and guest posting on premium platforms. Manage ongoing monthly blogs (2-4 posts). Run regular conversion-rate audits on the Scent Quiz page to continuously improve e-commerce sales.</li>
+            </ul>
+            
+            <h2>💰 Part 7: Commercial Investment &amp; 6-Month Contracts</h2>
+            <p>To provide absolute precision and clarity, we offer three tailored pricing structures calculated as complete <strong>6-Month Contracts</strong>:</p>
+            
+            <h3>Tier 1: Tech &amp; Structural SEO (Bilingual)</h3>
+            <blockquote>
+                <strong>Month 1 Setup:</strong> €1,499  |  <strong>Months 2-6:</strong> €1,200/mo<br>
+                <strong>TOTAL 6-MONTH CONTRACT: €7,499</strong>
+            </blockquote>
+            
+            <h3>Tier 2: Premium Growth &amp; Content Engine (Recommended)</h3>
+            <blockquote>
+                <strong>Month 1 Setup:</strong> €2,799 (Includes Scent Quiz Capture Page Build)  |  <strong>Months 2-6:</strong> €2,400/mo<br>
+                <strong>TOTAL 6-MONTH CONTRACT: €14,799</strong>
+            </blockquote>
+            
+            <h3>Tier 3: Elite Headless / Next-Gen Performance &amp; Curation</h3>
+            <blockquote>
+                <strong>Month 1 Setup:</strong> €5,900 (Headless Frontend / High-End Animations)  |  <strong>Months 2-6:</strong> €3,900/mo<br>
+                <strong>TOTAL 6-MONTH CONTRACT: €25,400</strong>
+            </blockquote>
+            
+            <h3>🚀 Tier 3 Deep Dive: The Elite Headless &amp; Animated Architecture</h3>
+            <p>For Niche Perfumes to stand completely apart from any competitor, we propose <strong>Tier 3</strong>. In this elite tier, we migrate your frontend to a modern <strong>Headless E-Commerce Setup</strong> (using React / Next.js) while keeping WooCommerce solely as your backend database:</p>
+            <ol>
+                <li><strong>Instantaneous Speeds (Sub-1 Second):</strong> Headless sites load instantly, passing Google's Core Web Vitals with perfect 100/100 scores. This dramatically lowers bounce rates and boosts organic ranking signals.</li>
+                <li><strong>Breathtaking Custom Animations:</strong> We will design a bespoke, jaw-dropping visual experience with smooth scrolling, elegant slide transitions, and micro-interactions that feel as luxurious and exclusive as stepping into your physical boutique in Puerto Banús.</li>
+                <li><strong>Enterprise Off-Page &amp; PR SEO:</strong> Includes double-language blog management, international link campaigns, and premium guest features on elite global fashion/lifestyle portals.</li>
+            </ol>
+            
+            <h3>📊 ROI &amp; Sales Break-Even Forecast (Based on Tier 2)</h3>
+            <ul>
+                <li><strong>Average Order Value (AOV):</strong> €220</li>
+                <li><strong>Tier 2 Monthly Cost (Months 2-6):</strong> €2,400</li>
+                <li><strong>Break-Even Target:</strong> <strong>Only 11 additional orders per month</strong> across Spain and Europe.</li>
+                <li><strong>Conservative Growth Forecast (Month 3 onwards):</strong> If our campaign generates just 1 additional sale per day (30 sales/month):
+                    <ul>
+                        <li><strong>New Monthly Revenue:</strong> €6,600</li>
+                        <li><strong>Net Monthly Profit (after SEO investment):</strong> <strong>€4,200 / Month</strong></li>
+                        <li><strong>Annual Net Incremental Profit:</strong> <strong>€50,400 / Year</strong></li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <h3>🎯 Get Started:</h3>
+            <ol>
+                <li><strong>Confirm Your Tier:</strong> Select your preferred contract package (Foundations, Growth, or Elite Headless).</li>
+                <li><strong>Provide Secure Access:</strong> Share standard, limited administrator access to your WordPress dashboard, Google Analytics 4, and Google Search Console to begin Month 1.</li>
+                <li><strong>Kickoff Call:</strong> Align on the priority list of the top 100 products and schedule the first technical fixes.</li>
+            </ol>
+        </div>
+        
+        <div class="es-text">
+            <h1>🧴 Estrategia de Búsqueda y Conversión Premium</h1>
+            <p style="font-size: 0.95rem; color: #777;">
+                <strong>Fecha:</strong> Mayo de 2026<br>
+                <strong>Cliente:</strong> Cecilia y el equipo de Niche Perfumes<br>
+                <strong>Sitio Web:</strong> <a href="https://www.nicheperfumes.net" target="_blank" style="color: var(--gold); text-decoration: none;">nicheperfumes.net</a><br>
+                <strong>Presentado por:</strong> Consultora Senior de SEO y Crecimiento de E-Commerce
+            </p>
+            <hr>
+            
+            <h2>✉️ Resumen Ejecutivo</h2>
+            <p>Estimada Cecilia,</p>
+            <p>Gracias por la oportunidad de presentar esta propuesta integral de crecimiento impulsada por las búsquedas. Hemos realizado una rigurosa auditoría técnica de <strong>nicheperfumes.net</strong>, analizado el panorama competitivo de las fragancias de lujo en España y Europa, y diseñado una campaña de extremo a extremo optimizada específicamente para el excepcional catálogo de su marca.</p>
+            <p>Sus boutiques físicas en Marbella (Puerto Banús), Madrid, Barcelona y Sevilla representan el pináculo absoluto del lujo de alta gama. Actualmente existe una brecha notable entre el prestigio offline de su marca y su huella digital de búsqueda. Los compradores premium buscan activamente las creaciones exclusivas y de alto precio que ustedes ofrecen (como <strong>Xerjoff - Naxos, Torino 25</strong>, <strong>Stéphane Humbert Lucas - God of Fire</strong>, <strong>Fragrance du Bois - Sirène Privée</strong> y <strong>Spirit of Kings - Harmony</strong>), pero su sitio web es prácticamente invisible en los resultados de búsqueda más valiosos de Google. Grandes retailers masivos como Notino, almacenes tradicionales como El Corte Inglés y competidores de especialidad como Isolee.com están captando este tráfico premium de alta intención.</p>
+            <p>Nuestra propuesta está diseñada para cerrar esta brecha por completo. No nos centramos en "rankings planos de palabras clave". Nos enfocamos en <strong>dirigir tráfico orgánico bilingüe de alta intención que se convierta en ventas reales en su e-commerce</strong>. Hemos respondido a cada uno de los requisitos On-Page y Off-Page solicitados, asociándolos a un riguroso diagnóstico técnico, y los hemos integrado en un <strong>Cronograma de Campaña a 6 Meses</strong> muy persuasivo y con tarifas claras y predecibles.</p>
+            <p>Además, proponemos implementar un embudo interactivo revolucionario: el <strong>Scent quiz de Lujo</strong> en su WordPress actual, junto con una opción premium <strong>Headless / Frontend de Nueva Generación</strong> con animaciones fluidas espectaculares para diferenciar a Niche Perfumes por completo en el mercado.</p>
+            <p>Esperamos trabajar de la mano con el equipo de Niche Perfumes para consolidar su boutique como la autoridad digital indiscutible en perfumería artística de lujo.</p>
+            <p>Atentamente,<br><strong>El Equipo de Estrategia de Búsqueda y Crecimiento de E-Commerce</strong></p>
+            
+            <h2>🩺 Parte 1: Diagnóstico Técnico del Sitio Web y Oportunidades</h2>
+            <p>Su sitio está construido sobre una arquitectura sólida y altamente escalable: <strong>WordPress + WooCommerce</strong>, optimizado con el plugin <strong>WP Rocket</strong> y gestionado con <strong>Yoast SEO</strong>. Esto es excelente, ya que nos permite un control total sobre el código y la estructura técnica sin requerir una migración costosa.</p>
+            <p>Sin embargo, nuestro rastreo profundo ha identificado varios cuellos de botella técnicos en buscadores que actualmente les están restando ingresos directos:</p>
+            
+            <h3>1.1 Corrección de Etiqueta H1 en la Homepage (🔴 Crítico)</h3>
+            <ul>
+                <li><strong>Estado Actual:</strong> El único tag H1 en su página de inicio es <code>&lt;h1&gt;LAS MÁS VENDIDAS&lt;/h1&gt;</code> (que se ubica sobre el carrusel de best-sellers).</li>
+                <li><strong>El Cuello de Botella:</strong> Los rastreadores de Google interpretan el H1 como el tema central del sitio. Actualmente Google entiende que la temática principal de su portal es "las más vendidas", en lugar de su prestigioso nombre de marca y colección curada de perfumes.</li>
+                <li><strong>Nuestra Solución:</strong> Corregiremos esto en todo el sitio. El H1 de la homepage se modificará por un título elegante con tipografía de lujo: <code>&lt;h1&gt;Niche Perfumes — Perfumería de Nicho y Fragancias Exclusivas de Alta Gama&lt;/h1&gt;</code>.</li>
+            </ul>
+            
+            <h3>1.2 Textos Alt de Imágenes Vacíos (🔴 Crítico - Pérdida de Tráfico)</h3>
+            <ul>
+                <li><strong>Estado Actual:</strong> Prácticamente todas las imágenes de producto de la home, cuadrículas de marca y listados tienen etiquetas alt vacías: <code>&lt;img src=".../sirene-prive.webp" alt=""&gt;</code>.</li>
+                <li><strong>El Cuello de Botella:</strong> Google no puede "ver" imágenes. Sin textos Alt descriptivos, sus hermosas botellas de lujo son 100% invisibles en las búsquedas de Google Imágenes. Los compradores premium buscan intensamente en Google Imágenes por estética, frascos o empaques.</li>
+                <li><strong>Nuestra Solución:</strong> Implementaremos nuestro protocolo de mapeo de textos alternativos estéticos y optimizados. Cada imagen seguirá una estructura de lujo rica en palabras clave: <code>&lt;img src="sirene-prive.webp" alt="Sirène Privée de Fragrance du Bois — Eau de Parfum de Lujo 75ml"&gt;</code>.</li>
+            </ul>
+            
+            <h3>1.3 Carga de Imágenes sobre el Viewport y Core Web Vitals (🟡 Rendimiento)</h3>
+            <ul>
+                <li><strong>Estado Actual:</strong> La función de Lazy-loading de WP Rocket está activa, pero se aplica de forma demasiado agresiva, lazy-loadeando el slider principal del banner de la home y la primera fila de productos visibles.</li>
+                <li><strong>El Cuello de Botella:</strong> Esto retrasa notablemente el despliegue del bloque visual superior, penalizando severamente la métrica <strong>Largest Contentful Paint (LCP)</strong>, factor de posicionamiento clave de Google.</li>
+                <li><strong>Nuestra Solución:</strong> Añadiremos reglas de exclusión en WP Rocket para las primeras 4–6 imágenes de la parte superior, marcándolas con etiquetas de alta prioridad para renderizado instantáneo: <code>&lt;img src="hero-banner.jpg" loading="eager" fetchpriority="high" alt="Colección Exclusiva de Perfumes de Nicho"&gt;</code>.</li>
+            </ul>
+            
+            <h3>1.4 Datos Estructurados Schema (🔴 Gran Desventaja)</h3>
+            <ul>
+                <li><strong>Estado Actual:</strong> No hay marcado estructurado de Schema de Producto, Oferta, LocalBusiness ni Breadcrumbs activo en <code>nicheperfumes.net</code>.</li>
+                <li><strong>El Cuello de Botella:</strong> Cuando un cliente busca sus productos, sus competidores aparecen en Google con precios visibles (245,00 €), estrellas de valoración doradas y la etiqueta "En Stock", captando los clics. Sus resultados se ven como texto plano y plano.</li>
+                <li><strong>Nuestra Solución:</strong> Diseñaremos e inyectaremos marcado JSON-LD Schema en todo el catálogo de productos, garantizando que aparezcan como llamativos "Rich Snippets" visuales en Google.</li>
+            </ul>
+            
+            <h2>🥊 Parte 2: Análisis de Competencia</h2>
+            <p>Para dominar el segmento de lujo, Niche Perfumes debe capitalizar las brechas específicas que dejan sus principales competidores:</p>
+            
+            <h3>2.1 El Panorama Competitivo</h3>
+            <ol>
+                <li><strong>Isolee.com (Competidor de Especialidad):</strong> Construido sobre PrestaShop, operan una boutique física de lujo en Galería Canalejas (epicentro de la alta gama en Madrid), espejando la presencia física de ustedes. Emplean una web bilingüe (ES/EN) con marcado estructurado de Schema y un blog de revista activo.</li>
+                <li><strong>Notino y El Corte Inglés (Los Gigantes de Volumen):</strong> Poseen una autoridad de dominio inmensa, pero sus portales son corporativos, fríos y masivos. Tratan un frasco de Xerjoff de 300 € igual que una crema de supermercado de 10 €. Son incapaces de evocar la historia artística detrás del aroma.</li>
+                <li><strong>The Perfumery Barcelona y All Yours Bcn (Boutiques Locales):</strong> Muy especializados pero con alcance nacional, catálogo y visibilidad local muy limitada en buscadores.</li>
+            </ol>
+            
+            <h3>2.2 Comparativa Directa: Niche Perfumes vs. Isolee.com</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Métrica de Búsqueda y Marca</th>
+                        <th>nicheperfumes.net (Actual)</th>
+                        <th>Isolee.com</th>
+                        <th>Plan de Batalla</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>SEO Bilingüe (EN/ES)</strong></td>
+                        <td>⚠️ Presente pero sin optimizar</td>
+                        <td>✅ Totalmente bilingüe y estructurado</td>
+                        <td><strong>Optimizar ambas versiones</strong> del Top 100 de productos (ES/EN)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Blog / Revista de Contenidos</strong></td>
+                        <td>❌ Ninguno activo</td>
+                        <td>✅ Blog activo (<code>ybc_blog</code>)</td>
+                        <td>Lanzar <code>/revista</code> para rankear en guías editoriales de compra</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Marcado Schema de Producto</strong></td>
+                        <td>❌ Completamente ausente</td>
+                        <td>✅ Schema de Producto y Ofertas</td>
+                        <td>Inyectar JSON-LD estructurado para capturar estrellas y precios en Google</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Textos Alt de Imágenes</strong></td>
+                        <td>❌ En blanco / Vacíos</td>
+                        <td>🟢 Mayormente optimizados</td>
+                        <td>Implementar Alts sensoriales perfectos para traccionar en Google Imágenes</td>
+                    </tr>
+                    <tr>
+                        <td><strong>UX y Animaciones de Lujo</strong></td>
+                        <td>🟡 Plantilla WooCommerce estándar</td>
+                        <td>🟡 Plantilla PrestaShop estándar</td>
+                        <td><strong>Estructurar un frontend premium</strong> con transiciones fluidas asombrosas</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3>2.3 Nuestra Ventaja Competitiva Directa</h3>
+            <ul>
+                <li><strong>Doble Optimización de Idiomas (ES/EN):</strong> Su web bilingüe es un activo estratégico brutal. Optimizaremos simultáneamente la versión española y la inglesa del Top 100 de productos, absorbiendo la alta demanda de turistas de lujo y extranjeros residentes (expats) en Marbella, Costa del Sol, Madrid y Barcelona.</li>
+                <li><strong>Exclusividad y Autoridad (E-E-A-T):</strong> Los gigantes masivos no ofrecen pirámides olfativas profundas, narrativas de perfumistas o asesoría personalizada. Posicionaremos a Niche Perfumes como el gran prescriptor experto.</li>
+                <li><strong>UX y Animaciones de Alta Gama:</strong> Crearemos elementos visuales y de scroll premium e interactivos, separando estéticamente la marca de cualquier plantilla genérica y acercándola a la experiencia de Chanel o Dior.</li>
+            </ul>
+            
+            <h2>🎯 Parte 3: Campaña On-Page de SEO</h2>
+            <p>Cubrimos al detalle cada requisito solicitado, estructurando un plan de acción para el <strong>Contrato de 6 Meses</strong>:</p>
+            
+            <h3>3.1 Creación y Optimización de Contenido (Home, Categorías y Productos)</h3>
+            <p>Redactaremos de forma persuasiva y optimizada el contenido de las páginas de producto, categorías de marca y home, manteniendo el tono editorial de lujo:</p>
+            <ul>
+                <li><strong>Fichas de Producto:</strong> Estructuraremos descripciones ricas que detallen la <strong>pirámide olfativa</strong> (Notas de Salida, Corazón y Fondo), estaciones recomendadas de uso, perfil del perfumista y volumen, en español e inglés.</li>
+                <li><strong>Páginas de Categorías y Marca (ej. Xerjoff):</strong> Crearemos textos de introducción curados (200–300 palabras) sobre la historia de la casa artística para rankear en keywords transaccionales de marca.</li>
+            </ul>
+            
+            <h3>3.2 Keyword Research Bilingüe</h3>
+            <p>Mapearemos y optimizaremos términos en ambos idiomas para capturar todas las vertientes del tráfico:</p>
+            <ul>
+                <li><em>Búsquedas en Español:</em> "comprar perfume Xerjoff España", "Stéphane Humbert Lucas God of Fire precio", "perfumes de nicho orientales online".</li>
+                <li><em>Búsquedas en Inglés:</em> "buy Xerjoff Naxos Europe", "where to buy Stéphane Humbert Lucas in Marbella", "exclusive long-lasting oud perfumes".</li>
+            </ul>
+            
+            <h3>3.3 Jerarquía de Encabezados H-Tags</h3>
+            <p>Organizaremos la estructura semántica de etiquetas H-tags para un rastreo limpio de los buscadores:</p>
+            <ul>
+                <li><strong>H1:</strong> Reservado única y exclusivamente al título principal de la página (Nombre de producto, nombre de la marca en categorías, propuesta de valor en Home).</li>
+                <li><strong>H2:</strong> Secciones principales (ej. "La Pirámide Olfativa", "Historia de la Casa Xerjoff", "Opiniones de Clientes").</li>
+                <li><strong>H3:</strong> Títulos menores (nombres de notas, nombres de productos sugeridos).</li>
+            </ul>
+            
+            <h3>3.4 Optimización de Imágenes y Textos Alt</h3>
+            <ul>
+                <li>Corregiremos e inyectaremos textos Alt en **todas las fotos del Top 100 de productos**.</li>
+                <li>Cada Alt combinará la marca, nombre, volumen e intención: <code>alt="God of Fire de Stéphane Humbert Lucas 777 — Perfume de Nicho Exclusivo 50ml"</code>.</li>
+                <li>Implementaremos formatos Next-Gen (<code>.webp</code>) y compresión premium para que las fotos carguen instantáneamente sin perder su calidad de lujo.</li>
+            </ul>
+            
+            <h3>3.5 Optimización de SEO Titles y Meta Descriptions</h3>
+            <p>Escribiremos metadatos magnéticos y de alto CTR para el Top 100 de productos dentro de los límites ideales de píxeles:</p>
+            <ul>
+                <li><strong>Título Optimizado:</strong> <code>Xerjoff Naxos Eau de Parfum 100ml | Boutique Oficial España</code></li>
+                <li><strong>Meta Description Optimizada:</strong> <code>Descubre Xerjoff Naxos en Niche Perfumes. Exquisita combinación de miel, tabaco y cítricos. 100% original. Envío rápido en España y Europa. Compra ahora.</code></li>
+            </ul>
+            
+            <h3>3.6 Robots.txt y Sitemaps</h3>
+            <ul>
+                <li>Limpiaremos su <code>robots.txt</code> para enfocar el rastreo de Google en las páginas transaccionales y de marca, bloqueando parámetros del carrito, filtros o áreas de usuario que restan "crawl budget" (presupuesto de rastreo).</li>
+                <li>Estructuraremos un sitemap XML limpio y lo daremos de alta en <strong>Google Search Console</strong>.</li>
+            </ul>
+            
+            <h3>3.7 Marcado de Datos Estructurados (Schema)</h3>
+            <p>Inyectaremos código Schema JSON-LD estructurado en todo el catálogo de productos. Ejemplo técnico:</p>
+            <pre><code>{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "God of Fire - Stéphane Humbert Lucas",
+  "image": "https://www.nicheperfumes.net/wp-content/uploads/god-of-fire.jpg",
+  "description": "An exquisite amber woody fragrance capturing pure luxury with notes of mango, ginger, and blue hemlock.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Stéphane Humbert Lucas"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "EUR",
+    "price": "215.00",
+    "availability": "https://schema.org/InStock",
+    "itemCondition": "https://schema.org/NewCondition",
+    "url": "https://www.nicheperfumes.net/product/god-of-fire/"
+  }
+}</code></pre>
+            
+            <h3>3.8 Galerías de Imágenes Completas</h3>
+            <p>Auditaremos que las 100 fichas clave contengan galerías de alta resolución completas (frasco, caja/unboxing, textura de la fragancia) para disipar cualquier duda del comprador online.</p>
+            
+            <h3>3.9 Blog Editorial Dinámico (2 a 4 Artículos Mensuales)</h3>
+            <p>Optimizaremos los borradores provistos por su equipo para convertirlos en <strong>focos de atracción de clientes</strong>:</p>
+            <ul>
+                <li><strong>El Proceso:</strong> Estructuraremos el texto con palabras clave informacionales, marcados de encabezados, enlaces internos a las categorías de marca y metadatos específicos.</li>
+                <li><strong>Ideas de Calendario Editorial:</strong>
+                    <ol>
+                        <li><em>La guía definitiva de perfumes unisex de nicho para el verano en Marbella.</em></li>
+                        <li><em>Por qué Xerjoff Naxos es la fragancia de tabaco y miel más codiciada del mundo.</em></li>
+                        <li><em>Descifrando la casa Stéphane Humbert Lucas y el misterio tras God of Fire.</em></li>
+                        <li><em>Cómo elegir un perfume de Oud exclusivo: Todo lo que debes saber.</em></li>
+                    </ol>
+                </li>
+            </ul>
+            
+            <h2>🌐 Parte 4: Estrategia SEO Off-Page y de Autoridad</h2>
+            <p>Para superar a retailers genéricos, generaremos confianza y relevancia externa mediante tácticas de alta calidad:</p>
+            
+            <h3>4.1 Enlaces de Autoridad (Link Building)</h3>
+            <p>Huyendo de técnicas automatizadas que penalizan, buscaremos <strong>backlinks exclusivos de alta reputación</strong> en blogs y portales de moda, belleza y estilo de vida premium, además de foros consolidados de alta perfumería.</p>
+            
+            <h3>4.2 SEO Local y Boutiques Físicas (Impulsor E-E-A-T)</h3>
+            <p>Sus tiendas físicas son activos de inmenso valor que Notino no tiene. Los aprovecharemos:</p>
+            <ul>
+                <li><strong>Google Business Profile (GBP):</strong> Optimizaremos los perfiles en Marbella (Puerto Banús), Madrid, Barcelona y Sevilla, capturando búsquedas de mapas de turistas de alto poder adquisitivo.</li>
+                <li><strong>Directorios Premium:</strong> Registros en portales de turismo de lujo, guías de compras y directorios regionales.</li>
+                <li><strong>Trustpilot:</strong> Creación y automatización de reseñas de clientes integradas en la web.</li>
+            </ul>
+            
+            <h3>4.3 Comentarios Estratégicos en Blogs</h3>
+            <p>Intervenciones manuales de expertos aportando valor técnico en hilos de foros y blogs reconocidos de perfumería, enlazando como recurso educativo a las guías de Niche Perfumes.</p>
+            
+            <h3>4.4 Guest Posting Premium</h3>
+            <p>Redacción y publicación de artículos especializados en revistas de estilo de vida del motor o de alta costura, transmitiendo enlaces directos de gran autoridad semántica a su catálogo.</p>
+            
+            <h2>💎 Parte 5: Página de Captación interactiva en WordPress</h2>
+            <p>Para capitalizar el tráfico, desarrollaremos un embudo persuasivo en su web:</p>
+            
+            <h3>Opción A: El Scent Finder Quiz interactivo (Recomendado)</h3>
+            <ul>
+                <li><strong>El Quiz Olfativo:</strong> Cuestionario visual interactivo de 5 preguntas que dirige al usuario a su fragancia ideal.</li>
+                <li><strong>El Discovery Sample Set (30 €):</strong> Compra de un set de 3 a 5 muestras premium decantadas de sus mejores marcas para testar.</li>
+                <li><strong>El Cierre con Voucher:</strong> La caja de muestras incluye un cupón de 30 € reembolsables para la compra del frasco grande de perfume.</li>
+            </ul>
+            
+            <h3>Opción B: Landing Page Premium Directa</h3>
+            <p>Landing page minimalista de alta gama que expone los 5 bestsellers con descripciones sensoriales, fotos de alta definición y botones directos de compra sin pasar por el carrito de WooCommerce.</p>
+            
+            <h2>🗺️ Parte 6: Hoja de Ruta de 6 Meses y Hitos</h2>
+            <ul>
+                <li><strong>Mes 1: Bases y Técnico</strong><br>Corrección del H1 de home, titles, descripciones, sitemap XML, robots.txt, inyección de Schema básico en productos y keywords bilingües.</li>
+                <li><strong>Mes 2: Curación y Landing Page de Captación</strong><br>Redacción de textos sensoriales para el Top 100 de productos (ES/EN). Alt text de imágenes. Lanzamiento del Scent Quiz. 2 artículos de blog optimizados.</li>
+                <li><strong>Mes 3: SEO Local y Autoridad</strong><br>Google Business Profile de las boutiques, reseñas de Trustpilot integradas, inicio de campañas activas de backlinks. Primer informe de rendimiento SEO.</li>
+                <li><strong>Meses 4-6: Escalado y Blogs Continuos</strong><br>Escalado de backlinks de alta autoridad mediante guest posts. Blogs mensuales recurrentes y monitorización de conversiones del Quiz olfativo.</li>
+            </ul>
+            
+            <h2>💰 Parte 7: Estructura de Inversión y Tarifas</h2>
+            <p>Detallamos las tres opciones estructuradas en <strong>Contratos Cerrados a 6 Meses</strong>:</p>
+            
+            <h3>Tier 1: Tech &amp; Structural SEO (Bilingüe)</h3>
+            <blockquote>
+                <strong>Mes 1 (Setup):</strong> 1.499 €  |  <strong>Meses 2-6:</strong> 1.200 € / mes<br>
+                <strong>TOTAL CONTRATO 6 MESES: 7.499 €</strong>
+            </blockquote>
+            
+            <h3>Tier 2: Premium Growth &amp; Content Engine (Recomendado)</h3>
+            <blockquote>
+                <strong>Mes 1 (Setup e inyección del Quiz):</strong> 2.799 €  |  <strong>Meses 2-6:</strong> 2.400 € / mes<br>
+                <strong>TOTAL CONTRATO 6 MESES: 14.799 €</strong>
+            </blockquote>
+            
+            <h3>Tier 3: Elite Headless / Next-Gen Performance &amp; Curation</h3>
+            <blockquote>
+                <strong>Mes 1 (Desarrollo Headless y Animaciones):</strong> 5.900 €  |  <strong>Meses 2-6:</strong> 3.900 € / mes<br>
+                <strong>TOTAL CONTRATO 6 MESES: 25.400 €</strong>
+            </blockquote>
+            
+            <h3>👑 Tier 3 Deep Dive: Arquitectura Headless y Animaciones de Lujo</h3>
+            <p>Para un distanciamiento absoluto de la competencia, el <strong>Tier 3 (Elite)</strong> propone migrar a un <strong>Frontend Headless (Next.js / React)</strong> independiente conservando su base de datos de WooCommerce:</p>
+            <ol>
+                <li><strong>Velocidad de Carga Instantánea (subsegundo):</strong> Puntuación 100/100 en Core Web Vitals, reduciendo rebote drásticamente.</li>
+                <li><strong>Animaciones de Lujo a Medida:</strong> Diseño visual interactivo y scroll fluido de la máxima vanguardia para recrear la elegancia de su boutique de Puerto Banús de forma digital.</li>
+                <li><strong>PR y Enlaces de Rango Internacional:</strong> Gestión completa de contenidos, link building bilingüe de élite y menciones editoriales internacionales.</li>
+            </ol>
+            
+            <h3>📊 Proyecciones de ROI y Ventas para Amortización (Basado en Tier 2)</h3>
+            <ul>
+                <li><strong>Ticket Medio de Compra (AOV):</strong> 220 €</li>
+                <li><strong>Inversión Mensual del SEO (Meses 2-6):</strong> 2.400 €</li>
+                <li><strong>Ventas Necesarias para Amortizar:</strong> <strong>Solo 11 ventas adicionales al mes</strong> en toda España y Europa.</li>
+                <li><strong>Previsión de Crecimiento Moderado (Mes 3+):</strong> Consiguiendo solo 1 venta adicional al día (30 ventas / mes):
+                    <ul>
+                        <li><strong>Nuevos Ingresos Mensuales:</strong> 6.600 €</li>
+                        <li><strong>Beneficio Neto Mensual (libre de coste SEO):</strong> <strong>4.200 € / mes</strong></li>
+                        <li><strong>Incremento de Beneficio Neto Anual:</strong> <strong>50.400 € / año</strong></li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <h3>🎯 Cómo Empezar:</h3>
+            <ol>
+                <li><strong>Confirmación de Tarifa:</strong> Selección del paquete preferido (Fundamentos, Crecimiento o Elite Headless).</li>
+                <li><strong>Credenciales Seguras:</strong> Acceso a WordPress, GA4 y Search Console para el inicio de auditorías en el Mes 1.</li>
+                <li><strong>Reunión de Lanzamiento:</strong> Definición final del listado Top 100 de productos clave.</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- Agency Guide Content Template (Walkthrough) -->
+    <div id="guide-content-template" style="display: none;">
+        <h1>🎓 Guía de Venta Estratégica y Walkthrough de Implementación Técnica</h1>
+        <p style="font-size: 0.95rem; color: #777;">
+            <strong>Manual Interno de la Agencia</strong> — Niche Perfumes Campaign
+        </p>
+        <hr>
+        
+        <h2>🧠 Part 1: Ajustes de Posicionamiento Comercial y "Secretos del Técnico"</h2>
+        <p>Para posicionarte como una boutique de consultoría de élite y defender tarifas de hasta 25.000 €, debemos ajustar el marco de comunicación:</p>
+        <ol>
+            <li><strong>Privacidad de tus Herramientas (Cero menciones a IA):</strong> En toda la propuesta comercial y en la presentación web interactiva <strong>hemos eliminado por completo cualquier mención a herramientas de Inteligencia Artificial (NotebookLM, Claude, Antigravity, etc.)</strong>. De cara al cliente, este es tu "know-how" exclusivo. Nos referimos a nuestro flujo de trabajo como el <strong>"Proprietary Semantic &amp; Curation Grounding Framework"</strong> (Marco Propietario de Curation y Enlazado Semántico). Eres un ingeniero y estratega de búsqueda, no un operador de prompts.</li>
+            <li><strong>Enfoque de Posicionamiento Bilingüe Real:</strong> Dado que la web de Niche Perfumes <strong>ya cuenta con versión en inglés y español</strong>, el trabajo no es "crear" el idioma, sino <strong>optimizar ambos de forma simultánea</strong>. Esto es una gran ventaja técnica: auditaremos y rankearemos las dos versiones del Top 100 de productos (titles, metas, encabezados, alts y enlazado interno bilingüe) atacando búsquedas locales en español e internacionales en inglés.</li>
+            <li><strong>El Gancho del Headless E-Commerce y las Animaciones (Tier 3):</strong> El lujo no es estático, es una experiencia sensorial. En el <strong>Tier 3 (Elite)</strong> proponemos una transformación absoluta hacia una <strong>arquitectura web Headless</strong> (Next.js/React en el frontend consumiendo la API de su WooCommerce actual) o un desarrollo WordPress a medida con <strong>animaciones, transiciones y efectos de scroll espectaculares y fluidos</strong>.
+                <ul>
+                    <li><em>¿Por qué headless?</em> Porque la velocidad de carga es de milisegundos (Core Web Vitals perfectos) y permite crear efectos visuales interactivos y fluidos que las plantillas ordinarias de WooCommerce jamás podrán lograr. Posiciona a Niche Perfumes a la par de marcas globales como Chanel o Dior.</li>
+                </ul>
+            </li>
+        </ol>
+        
+        <h2>🎙️ Part 2: Guion de Pitch en Español para la Reunión con Cecilia</h2>
+        <p>Usa este guion estructurado para tu llamada de presentación de 30 minutos. Está diseñado para responder directamente a <strong>cada uno de los puntos que ella solicitó en su correo</strong>:</p>
+        
+        <h3>1. Introducción y Marco de Confianza (Minutos 1-5)</h3>
+        <blockquote>
+            "Hola Cecilia, un placer saludarte. He analizado en profundidad la web de Niche Perfumes y tu solicitud. Vuestras tiendas físicas en Marbella, Madrid y Barcelona son un referente de lujo absoluto. Sin embargo, en internet hay una brecha importante. Notino e Isolee están capturando a vuestros clientes premium simplemente porque sus webs están optimizadas para los motores de búsqueda y la vuestra, actualmente, tiene fugas técnicas graves."
+        </blockquote>
+        
+        <h3>2. Respuesta Quirúrgica a sus Peticiones de On-Page y Off-Page (Minutos 5-15)</h3>
+        <p>"En vuestra solicitud mencionáis On-Page y Off-Page. Vamos a abordar exactamente cada punto con la máxima precisión:"</p>
+        <ul>
+            <li><strong>Bilingual SEO &amp; Keyword Research (Tus puntos 1 y 2):</strong> "Dado que ya tenéis la estructura en español e inglés, optimizaremos ambas versiones de vuestro Top 100 de productos. Mapearemos keywords de alta transacción como 'comprar Xerjoff Naxos España' para el público local y 'buy Stéphane Humbert Lucas Marbella' para el público internacional de la Costa del Sol."</li>
+            <li><strong>Corrección de Encabezados (H-Tags) e Imágenes (Tus puntos 3, 4 y 8):</strong> "Hoy en día, el H1 de vuestra Home es 'LAS MÁS VENDIDAS' en lugar de vuestra marca y propuesta. Además, vuestras fotos de producto tienen el texto Alt completamente vacío. Google Images no sabe qué vendéis. Vamos a corregir la jerarquía H-tags de toda la web y a estructurar el texto alternativo estético y optimizado de cada imagen del Top 100."</li>
+            <li><strong>Títulos, Metas, Robots.txt y Schema (Tus puntos 5, 6 y 7):</strong> "Limpiaremos el Robots.txt para guiar el rastreo y programaremos marcado estructurado JSON-LD Schema de Producto, Ofertas y Valoraciones para que aparezcáis con estrellas doradas y precios directamente en Google, lo que multiplicará vuestro porcentaje de clics (CTR)."</li>
+            <li><strong>Contenidos y Blogs (Tu punto 9):</strong> "Publicaremos de 2 a 4 artículos mensuales. Vuestro equipo nos proporciona los borradores para mantener el tono de la marca y nuestros ingenieros de búsqueda los estructuran con palabras clave, marcado de encabezados y enlazado interno para garantizar que rankeen."</li>
+            <li><strong>Off-Page &amp; Authority (Tus puntos de Off-Page):</strong> "Implementaremos una campaña de autoridad premium. Conseguiremos menciones en blogs especializados de fragancias (guest posting de alta reputación), optimizaremos vuestros perfiles locales en Google Maps para captar turistas en Marbella y Madrid, y crearemos una presencia cuidada en directorios de lujo."</li>
+        </ul>
+        
+        <h3>3. Presentación de la Web App Interactiva y el Scent Quiz (Minutos 15-25)</h3>
+        <p>Abre la aplicación interactiva index.html en tu pantalla y muéstrasela en vivo:</p>
+        <ul>
+            <li>Muestra el <strong>Simulador del Quiz Olfativo (Slide 5)</strong>: Haz clic en las opciones, simula el resultado y explécale el embudo del <em>Discovery Set</em> por 30 € con el cupón de descuento.</li>
+            <li>Muestra el <strong>Gráfico de Roadmap (Slide 7)</strong> para validar los tiempos de ejecución.</li>
+            <li>Muestra el <strong>ROI Calculator (Slide 8)</strong>: Ajusta los deslizadores y demuéstrale matemáticamente cómo con solo 11-13 ventas adicionales al mes amortizan tu servicio de crecimiento (Tier 2).</li>
+        </ul>
+        
+        <h2>💰 Part 3: Estructura de Precios Totales y Contratos a 6 Meses</h2>
+        <p>Debes ser sumamente exacto con los números. Cecilia pidió una indicación de costes, y presentarlo como un <strong>Contrato Cerrado de 6 Meses con desglose mes a mes y totales</strong> demuestra una solidez corporativa excelente.</p>
+        <p>Aquí tienes la configuración exacta de tus tres tarifas para presentar y negociar:</p>
+        
+        <h3>📦 TIER 1: SEO Technical Foundations (Bilingüe ES/EN)</h3>
+        <ul>
+            <li><strong>Enfoque:</strong> Diagnóstico, limpieza técnica de código, jerarquía H-tags, robots.txt, sitemaps y Schema básico bilingüe en el Top 100.</li>
+            <li><strong>Mes 1 (Setup &amp; Fixes):</strong> 1.499 €</li>
+            <li><strong>Meses 2 a 6 (Mantenimiento y tracking):</strong> 1.200 € / mes (6.000 € en total)</li>
+            <li>🔴 <strong>TOTAL CONTRATO 6 MESES: 7.499 €</strong></li>
+            <li><strong>Margen Neto para la Agencia:</strong> ~85% (La ejecución técnica requiere pocas horas mensuales tras el setup del mes 1).</li>
+        </ul>
+        
+        <h3>🚀 TIER 2: Premium Growth &amp; Content Engine (Recomendado)</h3>
+        <ul>
+            <li><strong>Enfoque:</strong> Todo el Tier 1 + Optimización completa de fichas de producto (Top 100 en ES y EN) + Carga e indexación de imágenes + Optimización de 2 a 4 artículos de blog mensuales + Campaña activa de Link Building y SEO Local de boutiques + <strong>Creación e integración de la Landing Page interactiva con el Scent Finder Quiz en WordPress</strong>.</li>
+            <li><strong>Mes 1 (Setup, Auditoría y Creación del Quiz):</strong> 2.799 €</li>
+            <li><strong>Meses 2 a 6 (Ejecución de contenido y links):</strong> 2.400 € / mes (12.000 € en total)</li>
+            <li>🟢 <strong>TOTAL CONTRATO 6 MESES: 14.799 €</strong></li>
+            <li><strong>Margen Neto para la Agencia:</strong> ~72% (Incluso subcontratando redactores y comprando backlinks de calidad, tu agencia retiene más de 10.500 € netos del contrato).</li>
+        </ul>
+        
+        <h3>💎 TIER 3: Elite Headless / Next-Gen Performance &amp; Curation (El Gran Salto)</h3>
+        <ul>
+            <li><strong>Enfoque:</strong> Todo el Tier 1 y 2 + Transformación del Frontend de la web a una <strong>Arquitectura Headless (Next.js / React)</strong> o rediseño WordPress a medida con <strong>animaciones, transiciones fluidas de página y efectos visuales de scroll espectaculares</strong> que diferencian la web de cualquier plantilla genérica + Campaña de relaciones públicas internacionales y colocación de enlaces en revistas de moda/lujo globales.</li>
+            <li><strong>Mes 1 (Desarrollo Frontend Headless / Animaciones Lujo):</strong> 5.900 €</li>
+            <li><strong>Meses 2 a 6 (SEO Bilingüe Premium + PR internacional):</strong> 3.900 € / mes (19.500 € en total)</li>
+            <li>👑 <strong>TOTAL CONTRATO 6 MESES: 25.400 €</strong></li>
+            <li><strong>Margen Neto para la Agencia:</strong> ~65% Margen (Tras cubrir costes de desarrollo frontend a medida y compra de enlaces PR de alta autoridad, tu beneficio neto supera los 16.500 €).</li>
+        </ul>
+        
+        <h2>🛠️ Part 4: Guía de la Web App Bilingüe Interactiva</h2>
+        <p>Para facilitarte la vida durante la llamada de ventas, <strong>he actualizado la Web App</strong> (index.html) incorporando una funcionalidad técnica magnífica:</p>
+        <ul>
+            <li><strong>Interruptor de Idioma Integrado (EN / ES Toggle):</strong> En cada diapositiva de la Web App verás un botón elegante de cambio de idioma. Al pulsarlo, todo el contenido de la diapositiva, los textos, los botones y la simulación del Quiz cambiarán instantáneamente de inglés a español y viceversa.</li>
+            <li><strong>¿Cómo te ayuda esto?</strong>
+                <ol>
+                    <li>Puedes practicar el pitch leyendo los textos en español en tu pantalla antes de la llamada.</li>
+                    <li>Si Cecilia prefiere que le presentes en inglés, cambias el interruptor y toda la presentación se mostrará en un inglés corporativo impecable.</li>
+                    <li>Demuestra al cliente vuestra absoluta capacidad técnica bilingüe en tiempo real.</li>
+                </ol>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        let currentSlideIndex = 0;
+        const totalSlides = 9;
+        const slides = document.querySelectorAll('.slide-container');
+        const dots = document.querySelectorAll('.progress-dot');
+        const menuItems = document.querySelectorAll('.slide-menu-item');
+        const numIndicator = document.getElementById('slide-num');
+        const numIndicatorEs = document.getElementById('slide-num-es');
+
+        function setLanguage(lang) {
+            const html = document.documentElement;
+            const btnEn = document.getElementById('lang-btn-en');
+            const btnEs = document.getElementById('lang-btn-es');
+            
+            if (lang === 'es') {
+                html.classList.remove('lang-en');
+                html.classList.add('lang-es');
+                btnEn.classList.remove('active');
+                btnEs.classList.add('active');
+            } else {
+                html.classList.remove('lang-es');
+                html.classList.add('lang-en');
+                btnEs.classList.remove('active');
+                btnEn.classList.add('active');
+            }
+            
+            // Re-render dynamically translated pieces
+            showRoadmapDetail(currentActiveRoadmapStep);
+            
+            // Re-trigger pricing calculations to format currency and texts correctly
+            updatePricingCalc(activeTierCost);
+        }
+
+        function goToSlide(index) {
+            if (index < 0 || index >= totalSlides) return;
+            
+            // Deactivate current slide
+            slides[currentSlideIndex].classList.remove('active');
+            dots[currentSlideIndex].classList.remove('active');
+            menuItems[currentSlideIndex].classList.remove('active');
+            
+            // Activate new slide
+            currentSlideIndex = index;
+            slides[currentSlideIndex].classList.add('active');
+            dots[currentSlideIndex].classList.add('active');
+            menuItems[currentSlideIndex].classList.add('active');
+            
+            // Update UI indicators
+            numIndicator.innerText = currentSlideIndex + 1;
+            numIndicatorEs.innerText = currentSlideIndex + 1;
+        }
+
+        function nextSlide() {
+            if (currentSlideIndex < totalSlides - 1) {
+                goToSlide(currentSlideIndex + 1);
+            } else {
+                goToSlide(0); // Loop back
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlideIndex > 0) {
+                goToSlide(currentSlideIndex - 1);
+            } else {
+                goToSlide(totalSlides - 1); // Loop back to end
+            }
+        }
+
+        // Toggle technical diagnostics detail view
+        function toggleDiagnostic(card, diagId) {
+            const detail = document.getElementById('diag-' + diagId);
+            const isCurrentlyShown = detail.style.display === 'block';
+            
+            // Reset all diagnostics details
+            document.querySelectorAll('.diagnostic-detail').forEach(d => d.style.display = 'none');
+            document.querySelectorAll('.glass-card').forEach(c => c.style.borderColor = 'rgba(197, 168, 128, 0.18)');
+            
+            if (!isCurrentlyShown) {
+                detail.style.display = 'block';
+                card.style.borderColor = 'var(--gold)';
+            }
+        }
+
+        // Scent Quiz Simulator Logic
+        let simChoices = {};
+        
+        function nextSimStep(choice) {
+            simChoices.family = choice;
+            document.getElementById('sim-step-1').classList.remove('active');
+            document.getElementById('sim-step-2').classList.add('active');
+        }
+
+        function nextSimStep2(choice) {
+            simChoices.occasion = choice;
+            document.getElementById('sim-step-2').classList.remove('active');
+            document.getElementById('sim-result').classList.add('active');
+            
+            // Calculate Matched Perfume based on choices
+            const nameEl = document.getElementById('matched-perfume-name');
+            const descEl = document.getElementById('matched-perfume-desc');
+            
+            const isEs = document.documentElement.classList.contains('lang-es');
+            
+            if (simChoices.family === 'Woody & Oud') {
+                nameEl.innerText = "Harmony - Spirit of Kings";
+                descEl.innerText = isEs 
+                    ? "Una majestuosa combinación de rico oud camboyano, cuero seco y sándalo suave. Ideal para " + simChoices.occasion + ", proyectando puro misterio y elegancia."
+                    : "A majestic blend of rich Cambodian Oud, smooth dry leather, and soft sandalwood. Perfect for " + simChoices.occasion + ", projecting pure mystery and absolute sophistication.";
+            } else if (simChoices.family === 'Fresh & Citrus') {
+                nameEl.innerText = "Torino 25 - Xerjoff";
+                descEl.innerText = isEs
+                    ? "Una explosión vigorizante de bergamota de Calabria, hierbas frescas y almizcle premium. Diseñado para " + simChoices.occasion + ", aportando una intensa frescura."
+                    : "An invigorating burst of Calabrian bergamot, fresh herbs, and premium musk. Tailored beautifully for " + simChoices.occasion + ", giving an intense feeling of crisp luxury.";
+            } else {
+                nameEl.innerText = "God of Fire - Lucas";
+                descEl.innerText = isEs
+                    ? "Legendaria obra maestra unisex con capas de mango jugoso, jengibre, madera y ámbar. Exquisito para " + simChoices.occasion + ", con una estela de fragancia descomunal."
+                    : "A legendary unisex masterpiece layered with juicy mango, spicy ginger, woody hemlock, and rich amber. Exquisite for " + simChoices.occasion + ", boasting huge sillage and compliments.";
+            }
+        }
+
+        function resetSimulator() {
+            simChoices = {};
+            document.getElementById('sim-result').classList.remove('active');
+            document.getElementById('sim-step-2').classList.remove('active');
+            document.getElementById('sim-step-1').classList.add('active');
+        }
+
+        // Interactive Timeline Roadmap Logic
+        let currentActiveRoadmapStep = 1;
+        
+        function showRoadmapDetail(step) {
+            currentActiveRoadmapStep = step;
+            const detailTxt = document.getElementById('roadmap-detail-txt');
+            const nodes = document.querySelectorAll('.roadmap-node');
+            
+            nodes.forEach((node, idx) => {
+                if (idx + 1 === step) {
+                    node.classList.add('active');
+                } else {
+                    node.classList.remove('active');
+                }
+            });
+            
+            const isEs = document.documentElement.classList.contains('lang-es');
+            
+            if (step === 1) {
+                detailTxt.innerHTML = isEs
+                    ? "<strong>Actividades del Mes 1:</strong> Corregimos de forma inmediata las etiquetas H-tags (H1 de home), investigación bilingüe de keywords, compresión de imágenes, exclusión de viewport lazy-load en WP Rocket y envío de sitemap a Google Search Console."
+                    : "<strong>Month 1 Activities:</strong> We immediately clean up site-wide H-tags (fixing Homepage H1), perform complete bilingual keyword research, compress images, remove viewport lazy-loading, and submit XML sitemaps to GSC for rapid indexing.";
+            } else if (step === 2) {
+                detailTxt.innerHTML = isEs
+                    ? "<strong>Actividades del Mes 2:</strong> Redacción de títulos, metas y descripciones sensoriales para el Top 100 de productos en español e inglés. Implementación de alt texts de imágenes. **Programación y lanzamiento de la Landing Page interactiva de captación (Scent Quiz)**."
+                    : "<strong>Month 2 Activities:</strong> We write optimized sensory descriptions, metadata titles and descriptions for your top 100 products, apply structural Alt texts, check product image galleries, and design and deploy the <strong>WordPress Scent Capture Funnel Quiz</strong>.";
+            } else if (step === 3) {
+                detailTxt.innerHTML = isEs
+                    ? "<strong>Actividades del Mes 3:</strong> Optimización y alineación de perfiles de Google Business Profiles en Marbella, Madrid, Barcelona y Sevilla. Integración de reseñas de Trustpilot con schema de valoraciones. Lanzamiento de backlinks de autoridad local."
+                    : "<strong>Month 3 Activities:</strong> We optimize Google Business Profiles for your locations in Madrid, Marbella, Barcelona, and Sevilla. We establish and integrate verified Trustpilot reviews, launch link-building campaigns, and deliver our <strong>First Monthly SEO Report</strong>.";
+            } else if (step === 4) {
+                detailTxt.innerHTML = isEs
+                    ? "<strong>Actividades del Mes 4 al 6:</strong> Escalado de backlinks de autoridad mediante publicaciones de invitados (guest blogging) en webs de moda y lujo, optimización regular de blogs mensuales a partir de tus borradores y auditorías continuas CRO."
+                    : "<strong>Month 4-6 Activities:</strong> We scale ongoing backlink growth via high-DA guest posting on prominent fragrance sites, manage monthly blog optimization (2-4 articles/month from client drafts), run regular CRO checks, and scale your organic sales funnel.";
+            }
+        }
+
+        // ROI Calculator Logic
+        let activeTierCost = 2400;
+
+        function updatePricingCalc(cost, setup) {
+            activeTierCost = cost;
+            const isEs = document.documentElement.classList.contains('lang-es');
+            document.getElementById('calc-tier-cost').innerText = isEs 
+                ? cost.toLocaleString('es-ES') + " € / mes"
+                : "€" + cost.toLocaleString('en-US') + " / mo";
+            calculateROI();
+        }
+
+        function calculateROI() {
+            const aov = parseInt(document.getElementById('slider-aov').value);
+            const sales = parseInt(document.getElementById('slider-sales').value);
+            const isEs = document.documentElement.classList.contains('lang-es');
+            
+            document.getElementById('val-aov').innerText = isEs ? aov + " €" : "€" + aov;
+            document.getElementById('val-sales').innerText = sales;
+            
+            // Calculate metrics
+            const breakeven = Math.ceil(activeTierCost / aov);
+            const newRevenue = aov * sales;
+            const netProfit = newRevenue - activeTierCost;
+            
+            document.getElementById('res-breakeven').innerText = isEs 
+                ? breakeven + (breakeven === 1 ? " pedido" : " pedidos")
+                : breakeven + (breakeven === 1 ? " order" : " orders");
+            document.getElementById('res-revenue').innerText = isEs
+                ? newRevenue.toLocaleString('es-ES') + " €"
+                : "€" + newRevenue.toLocaleString('en-US');
+            
+            const profitEl = document.getElementById('res-profit');
+            if (netProfit >= 0) {
+                profitEl.innerText = isEs
+                    ? netProfit.toLocaleString('es-ES') + " € / mes"
+                    : "€" + netProfit.toLocaleString('en-US') + " / mo";
+                profitEl.style.color = "#2ecc71";
+            } else {
+                profitEl.innerText = isEs
+                    ? "-" + Math.abs(netProfit).toLocaleString('es-ES') + " € / mes"
+                    : "-€" + Math.abs(netProfit).toLocaleString('en-US') + " / mo";
+                profitEl.style.color = "#e74c3c";
+            }
+        }
+
+        // Premium Document Modal Logic
+        function openProposalModal() {
+            const isEs = document.documentElement.classList.contains('lang-es');
+            document.getElementById('modal-title').innerText = isEs ? "PROPUESTA DE E-COMMERCE Y SEO" : "SEO & E-COMMERCE PROPOSAL";
+            const content = document.getElementById('proposal-content-template').innerHTML;
+            document.getElementById('modal-body').innerHTML = content;
+            
+            const modal = document.getElementById('document-modal');
+            modal.style.display = 'flex';
+            setTimeout(() => modal.classList.add('active'), 10);
+        }
+
+        function openGuideModal() {
+            document.getElementById('modal-title').innerText = "GUÍA DE VENTA ESTRATÉGICA";
+            const content = document.getElementById('guide-content-template').innerHTML;
+            document.getElementById('modal-body').innerHTML = content;
+            
+            const modal = document.getElementById('document-modal');
+            modal.style.display = 'flex';
+            setTimeout(() => modal.classList.add('active'), 10);
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('document-modal');
+            modal.classList.remove('active');
+            setTimeout(() => modal.style.display = 'none', 400);
+        }
+
+        function closeModalOnOverlay(e) {
+            if (e.target === document.getElementById('document-modal')) {
+                closeModal();
+            }
+        }
+
+        // Initialize ROI Calculation on startup
+        calculateROI();
+
+        // Keyboard navigation support
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') nextSlide();
+            if (e.key === 'ArrowLeft') prevSlide();
+        });
+    </script>
+</body>
+</html>
