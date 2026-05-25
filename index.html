@@ -1223,7 +1223,7 @@
                                 <span class="en-text">Begin Presentation</span>
                                 <span class="es-text">Comenzar Presentación</span>
                             </button>
-                            <button class="btn-pdf" onclick="openGuideModal()">
+                            <button id="agency-guide-btn" class="btn-pdf" onclick="openGuideModal()" style="display: none;">
                                 <i class="fa-solid fa-book"></i>
                                 <span class="en-text">Agency Guide</span>
                                 <span class="es-text">Guía de la Agencia</span>
@@ -2893,6 +2893,16 @@
                 closeModal();
             }
         }
+
+        // Show agency guide button only if ?agency=true is in the URL query string
+        window.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const showAgency = urlParams.get('agency') === 'true';
+            const guideBtn = document.getElementById('agency-guide-btn');
+            if (guideBtn) {
+                guideBtn.style.display = showAgency ? 'inline-flex' : 'none';
+            }
+        });
 
         // Initialize ROI Calculation on startup
         calculateROI();
